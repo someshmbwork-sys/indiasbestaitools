@@ -1,0 +1,38 @@
+---
+const path = Astro.url.pathname;
+const isActive = (p) => path === p || (p !== '/' && path.startsWith(p));
+---
+<header class="sticky top-0 z-50 backdrop-blur-md bg-bg/85 border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <a href="/" class="logo">
+      <span class="logo-mark">&#9733;</span>
+      <span>India's<span class="logo-dot mx-1">&middot;</span>Best AI</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1">
+      <a href="/" class:list={["px-4 py-2 rounded-full text-sm font-semibold transition-colors hover:bg-ink hover:text-bg", isActive('/') && "bg-ink text-bg"]}>Home</a>
+      <a href="/vs/chatgpt-vs-claude-india/" class:list={["px-4 py-2 rounded-full text-sm font-semibold transition-colors hover:bg-ink hover:text-bg", isActive('/vs/') && "bg-ink text-bg"]}>Compare</a>
+      <a href="/pricing-in-inr/" class:list={["px-4 py-2 rounded-full text-sm font-semibold transition-colors hover:bg-ink hover:text-bg", isActive('/pricing-in-inr') && "bg-ink text-bg"]}>Pricing</a>
+      <a href="/for/freelancers/" class:list={["px-4 py-2 rounded-full text-sm font-semibold transition-colors hover:bg-ink hover:text-bg", isActive('/for/') && "bg-ink text-bg"]}>By profession</a>
+    </nav>
+    <a href="#newsletter" class="hidden md:inline-flex btn btn-primary !py-2 !px-5 !text-sm">Newsletter <span class="arrow">&rarr;</span></a>
+    <button class="md:hidden flex flex-col gap-1.5 p-2" id="mob-toggle" aria-label="Menu" type="button">
+      <span class="w-6 h-0.5 bg-ink rounded"></span>
+      <span class="w-6 h-0.5 bg-ink rounded"></span>
+      <span class="w-6 h-0.5 bg-ink rounded"></span>
+    </button>
+  </div>
+  <div id="mob-menu" class="md:hidden hidden border-t border-ink/10 bg-bg">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-2">
+      <a href="/" class="py-2 font-semibold">Home</a>
+      <a href="/vs/chatgpt-vs-claude-india/" class="py-2 font-semibold">Compare</a>
+      <a href="/pricing-in-inr/" class="py-2 font-semibold">Pricing</a>
+      <a href="/for/freelancers/" class="py-2 font-semibold">By profession</a>
+      <a href="#newsletter" class="btn btn-primary mt-2 self-start !py-2 !px-5 !text-sm">Newsletter &rarr;</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const t = document.getElementById('mob-toggle');
+  const m = document.getElementById('mob-menu');
+  if (t && m) t.addEventListener('click', () => m.classList.toggle('hidden'));
+</script>

@@ -1,0 +1,47 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="bg-ink text-bg pt-16 pb-8 mt-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8 pb-10 border-b border-bg/15 mb-6">
+      <div class="md:col-span-2">
+        <div class="logo mb-3" style="color: var(--bg);">
+          <span class="logo-mark" style="background: var(--bg); color: var(--ink);">&#9733;</span>
+          <span>India's<span class="logo-dot mx-1">&middot;</span>Best AI</span>
+        </div>
+        <p class="text-sm text-bg/70 max-w-md mb-5 leading-relaxed">
+          An independent review journal for AI tools — with INR pricing, GST included, and payment workflows that actually work for Indian users.
+        </p>
+        <form id="newsletter" onsubmit="event.preventDefault(); alert('Newsletter signup will be wired up shortly.');" class="flex max-w-sm">
+          <input type="email" placeholder="your@email.com" required class="flex-1 px-4 py-3 bg-bg/10 border-2 border-bg/20 border-r-0 rounded-l-full text-bg text-sm placeholder:text-bg/50 focus:outline-none focus:border-yellow" />
+          <button type="submit" class="px-5 py-3 border-2 border-pink bg-pink text-white rounded-r-full font-bold text-sm hover:bg-yellow hover:text-ink hover:border-yellow transition-colors">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h4 class="text-xs font-extrabold uppercase tracking-wider text-yellow mb-4">Departments</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/for/freelancers/" class="text-bg/85 hover:text-yellow">Freelancers</a></li>
+          <li><a href="/for/freelancers/" class="text-bg/85 hover:text-yellow">Creators</a></li>
+          <li><a href="/for/freelancers/" class="text-bg/85 hover:text-yellow">CAs &amp; Finance</a></li>
+          <li><a href="/for/freelancers/" class="text-bg/85 hover:text-yellow">Small Business</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-extrabold uppercase tracking-wider text-yellow mb-4">Reviews</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/tools/chatgpt-india/" class="text-bg/85 hover:text-yellow">ChatGPT India</a></li>
+          <li><a href="/tools/claude-india/" class="text-bg/85 hover:text-yellow">Claude India</a></li>
+          <li><a href="/vs/chatgpt-vs-claude-india/" class="text-bg/85 hover:text-yellow">ChatGPT vs Claude</a></li>
+          <li><a href="/pricing-in-inr/" class="text-bg/85 hover:text-yellow">All pricing in INR</a></li>
+          <li><a href="/guides/pay-for-ai-tools-india/" class="text-bg/85 hover:text-yellow">How to pay</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-start gap-3 text-xs text-bg/55">
+      <p>&copy; {year} India's Best AI Tools &middot; Independent review journal.</p>
+      <p class="max-w-md md:text-right">
+        Affiliate disclosure: We may earn a commission when you sign up via some links on this site, at no extra cost to you.
+      </p>
+    </div>
+  </div>
+</footer>

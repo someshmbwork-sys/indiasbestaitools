@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.indiasbestaitools.com/sitemap-index.xml

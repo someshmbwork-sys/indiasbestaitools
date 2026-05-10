@@ -1,5 +1,15 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Is Perplexity free in India?`, answer: `Yes. The free tier works without any India-specific restrictions. Indian phone numbers and email addresses are accepted.` },
+  { question: `Does Perplexity accept UPI?`, answer: `Not directly. You will need an Indian credit card with international transactions enabled, or a forex card.` },
+  { question: `Why does Perplexity work better than ChatGPT for Indian topics?`, answer: `Because it pulls from current Indian web sources at every step. ChatGPT relies on its training data, which often misses or misstates recent Indian regulatory changes, court orders, and news. Perplexity reads the actual source for each query.` },
+  { question: `Can I use Perplexity in Hindi?`, answer: `Yes. Hindi queries work and Hindi sources (news, government sites) are surfaced when relevant. Output quality is good for Hindi but inconsistent for other Indian regional languages.` },
+  { question: `Is the free tier enough for an Indian college student?`, answer: `For most use, yes. The 5-Pro-searches-per-day limit hits during deep assignment research. If you're writing a thesis, the ₹1,994/month for a couple of months is worth it.` },
+];
+const reviewedItem = { name: 'Perplexity', url: 'https://www.perplexity.ai', priceInr: '1994', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
 ---
 <ArticleLayout
   title="Perplexity in India 2026: INR Pricing, Free Tier, and Research Workflow"
@@ -9,6 +19,10 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-10"
   updatedAt="2026-05-10"
   readTime="6 min read"
+
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
 >
 
 <div class="tldr-box">

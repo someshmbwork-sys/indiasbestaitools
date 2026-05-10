@@ -11,10 +11,90 @@ export interface Props {
   readTime?: string;
   toolName?: string;
   toolColor?: 'mint' | 'pink' | 'blue' | 'yellow' | 'lilac' | 'orange';
+  // Round 15: structured-data props
+  faqs?: Array<{ question: string; answer: string }>;
+  reviewedItem?: { name: string; url?: string; priceInr?: string; categoryLabel?: string };
+  rating?: { value: number; count?: number; best?: number };
 }
 
 const {
-  title, metaTitle, description, kicker, publishedAt, updatedAt, readTime = '8 min read', toolName, toolColor = 'mint', } = Astro.props;
+  title, metaTitle, description, kicker, publishedAt, updatedAt, readTime = '8 min read', toolName, toolColor = 'mint', faqs, reviewedItem, rating } = Astro.props;
+
+// Auto-derive breadcrumbs from URL pathname (e.g. /tools/chatgpt-india/ -> Home / Tools / ChatGPT India)
+const siteUrl = 'https://www.indiasbestaitools.com';
+function titleCase(slug) {
+  return slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+function deriveBreadcrumbs(pathname) {
+  if (!pathname) return null;
+  const parts = pathname.replace(/\/$/, '').split('/').filter(Boolean);
+  if (parts.length === 0) return null;
+  const sectionLabels = { tools: 'Reviews', vs: 'Comparisons', for: 'By profession', guides: 'Guides' };
+  const items = [{ name: 'Home', url: siteUrl + '/' }];
+  let acc = '';
+  for (let i = 0; i < parts.length; i++) {
+    acc += '/' + parts[i];
+    const isLast = i === parts.length - 1;
+    const name = i === 0 && sectionLabels[parts[i]] ? sectionLabels[parts[i]] : titleCase(parts[i]);
+    items.push({ name, url: siteUrl + acc + (isLast ? '/' : '/') });
+  }
+  return items;
+}
+const breadcrumbs = deriveBreadcrumbs(Astro.url?.pathname);
+
+// Build the JSON-LD graph for this article: BreadcrumbList + optional FAQPage + optional Review
+const graph = [];
+if (breadcrumbs && breadcrumbs.length > 1) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    'itemListElement': breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      'position': i + 1,
+      'name': b.name,
+      'item': b.url,
+    })),
+  });
+}
+if (faqs && faqs.length) {
+  graph.push({
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(f => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': { '@type': 'Answer', 'text': f.answer },
+    })),
+  });
+}
+if (reviewedItem) {
+  const review = {
+    '@type': 'Review',
+    'itemReviewed': {
+      '@type': reviewedItem.categoryLabel === 'SaaS' ? 'SoftwareApplication' : 'Product',
+      'name': reviewedItem.name,
+      ...(reviewedItem.url ? { 'url': reviewedItem.url } : {}),
+      ...(reviewedItem.priceInr ? {
+        'offers': {
+          '@type': 'Offer',
+          'priceCurrency': 'INR',
+          'price': reviewedItem.priceInr,
+          'availability': 'https://schema.org/InStock',
+        }
+      } : {}),
+    },
+    'author': { '@type': 'Organization', 'name': "India's Best AI Tools", 'url': siteUrl },
+    'datePublished': publishedAt,
+    'reviewBody': description,
+  };
+  if (rating) {
+    review.reviewRating = {
+      '@type': 'Rating',
+      'ratingValue': rating.value,
+      'bestRating': rating.best || 5,
+    };
+  }
+  graph.push(review);
+}
+const ldGraph = graph.length ? { '@context': 'https://schema.org', '@graph': graph } : null;
 ---
 <BaseLayout
   title={metaTitle}
@@ -52,6 +132,10 @@ const {
       </div>
     </div>
   </section>
+
+  {ldGraph && (
+    <script type="application/ld+json" set:html={JSON.stringify(ldGraph)} />
+  )}
 
   <article class="max-w-3xl mx-auto px-6 pb-16">
     <div class="prose-content">

@@ -1,5 +1,15 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Is Midjourney free in India?`, answer: `No. The free trial is paused globally as of 2026, including India. Basic tier at ~₹997/month is the entry point.` },
+  { question: `Does Midjourney accept UPI?`, answer: `Not directly. You will need an Indian credit card with international transactions enabled, or a forex card. Same payment friction as ChatGPT.` },
+  { question: `Will Midjourney generate Indian wedding scenes?`, answer: `Yes, and quality is good for Indian wedding aesthetics, mehendi, sangeet, haldi, baraat scenes. Specify the regional style (Punjabi, Tamil, Bengali wedding) in the prompt for better results.` },
+  { question: `Can I use Midjourney images for commercial work in India?`, answer: `Yes on paid plans. Midjourney's terms grant commercial usage rights to subscribers. Note that on Basic and Standard, your generations are visible in the public gallery, which can leak your client work direction.` },
+  { question: `Should I learn prompting for Midjourney?`, answer: `Yes, prompt quality matters more on Midjourney than on ChatGPT image generation. Spend an afternoon learning aspect ratio, style references, and parameter syntax. The output quality difference is dramatic.` },
+];
+const reviewedItem = { name: 'Midjourney', url: 'https://www.midjourney.com', priceInr: '997', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
 ---
 <ArticleLayout
   title="Midjourney in India 2026: INR Pricing, Payment, and What It's Best For"
@@ -9,6 +19,10 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-10"
   updatedAt="2026-05-10"
   readTime="6 min read"
+
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
 >
 
 <div class="tldr-box">

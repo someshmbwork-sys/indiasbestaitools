@@ -1,5 +1,13 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Can I claim GST input credit on ChatGPT or Claude subscription?`, answer: `If you're a registered GST business and use the tool for business purposes, yes, you can claim the 18% GST as input credit. You'll need a tax invoice with your GSTIN. Both tools can issue tax invoices on request through their billing support.` },
+  { question: `Are these tools blocked or restricted in India?`, answer: `No. Both ChatGPT and Claude are fully accessible in India without VPN as of 2026.` },
+  { question: `Which is better for Indian competitive exam prep?`, answer: `For UPSC, JEE, NEET, Claude tends to give more nuanced answers on humanities and reasoning. ChatGPT is faster on math and quick fact recall. Most students benefit from using both.` },
+  { question: `I'm a freelancer in India. Which one for client work?`, answer: `Claude. Better long-form output, better at maintaining tone, and the privacy default matters when handling client data. Read our full guide for Indian freelancers.` },
+  { question: `Will ChatGPT or Claude understand Kannada, Tamil, Telugu, or Marathi?`, answer: `Both handle major Indian languages reasonably. Claude is slightly better at Tamil and Bengali. ChatGPT handles Marathi and Gujarati slightly better. For Hindi, both are now production-quality.` },
+];
 ---
 <ArticleLayout
   title="ChatGPT vs Claude in India: Which One Should Indians Actually Pick?"
@@ -9,6 +17,8 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-08"
   updatedAt="2026-05-08"
   readTime="9 min read"
+
+  faqs={faqs}
 >
 
 <div class="tldr-box">

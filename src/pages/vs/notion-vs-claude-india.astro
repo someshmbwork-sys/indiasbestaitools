@@ -1,5 +1,13 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Can Notion AI replace Claude entirely?`, answer: `For pure standalone writing and reasoning, no. Notion AI's tone is workmanlike; Claude's is genuinely natural. For document and database operations inside your workspace, yes, Notion AI is better.` },
+  { question: `Can Claude replace Notion entirely?`, answer: `If you're a solo user without a team knowledge base, possibly yes. The moment you have multiple docs, multiple projects, or any team, you'll miss Notion's structure.` },
+  { question: `Which one is cheaper for Indian users?`, answer: `Notion Plus at ~₹997/user/month is cheaper than Claude Pro at ~₹2,005/month. But they're not interchangeable. Compare on use case, not price.` },
+  { question: `Will I get a GST invoice for both?`, answer: `Yes for both, with input credit, if you add your GSTIN to billing before subscribing.` },
+  { question: `Is the Notion AI add-on still separate?`, answer: `No. Notion bundled the AI into Plus and Business plans in 2024. There is no separate "Notion AI" line item on most accounts.` },
+];
 ---
 <ArticleLayout
   title="Notion AI vs Claude in India 2026: Different Tools, Different Jobs"
@@ -9,6 +17,8 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-10"
   updatedAt="2026-05-10"
   readTime="8 min read"
+
+  faqs={faqs}
 >
 
 <div class="tldr-box">

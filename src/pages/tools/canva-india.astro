@@ -1,5 +1,15 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Does Canva accept UPI in India?`, answer: `Yes, fully. UPI is a first-class payment method on Canva's Indian checkout, both for monthly and annual plans. PhonePe, Google Pay, Paytm, BHIM, and any UPI ID all work.` },
+  { question: `Will Canva give me a GST invoice in my company's name?`, answer: `Yes. Add your company name and GSTIN under Billing before subscribing. The invoice is automatically generated and emailed; you can also download it any time from Billing & Plans.` },
+  { question: `Is the Canva free plan enough for a small Indian business?`, answer: `Honestly, often yes for solo shopkeepers posting one image a week. The moment you have a logo to lock, multiple sizes to repurpose, or any team member, Pro pays back the ₹590 within the first week.` },
+  { question: `Can I cancel Canva Pro anytime in India?`, answer: `Yes. Cancellation is one click from Billing. You keep Pro features until the end of the current billing period. No cancellation fee, no auto-renewal trap.` },
+  { question: `Does Canva work in Indian languages?`, answer: `Canva interface supports Hindi, Tamil, Telugu, Bengali, Marathi, and several other Indian languages. Magic Write also generates copy in Hindi reasonably well, less so in regional languages.` },
+];
+const reviewedItem = { name: 'Canva', url: 'https://www.canva.com', priceInr: '590', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
 ---
 <ArticleLayout
   title="Canva in India 2026: INR Pricing, GST, and How to Use Magic Studio"
@@ -9,6 +19,10 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-10"
   updatedAt="2026-05-10"
   readTime="7 min read"
+
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
 >
 
 <div class="tldr-box">

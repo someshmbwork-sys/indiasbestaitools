@@ -1,5 +1,13 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `If I can only afford one, which?`, answer: `Gemini Pro, for the UPI payment, the bundled 2 TB Drive, and the free-tier safety net. The image and voice gap with ChatGPT is meaningful but the overall value is higher for most Indian use cases.` },
+  { question: `Does Gemini's GST invoice work for Indian businesses?`, answer: `For B2B input credit, route through Google Workspace (the Gemini add-on is fully GST-compliant with GSTIN). Personal Pro purchase via Google One gives you a tax invoice but not input credit.` },
+  { question: `Why does ChatGPT cost the same as Gemini if Gemini bundles more?`, answer: `It is the same sticker price; the value-add of bundled Drive storage is genuine. Gemini wins on effective price; ChatGPT wins on standalone polish and image/voice.` },
+  { question: `Can I switch between them?`, answer: `Yes. Both are month-to-month with no cancellation fee. Many Indian users alternate based on which features they're hitting limits on that month.` },
+  { question: `Does Gemini understand Hindi as well as ChatGPT?`, answer: `Yes. Both are production-grade for Hindi conversation, summarisation, and translation. ChatGPT may be slightly more natural in casual Hinglish; Gemini is slightly more accurate in formal Hindi. Real-world quality is comparable.` },
+];
 ---
 <ArticleLayout
   title="ChatGPT vs Gemini in India 2026: Which One Should You Pay For?"
@@ -9,6 +17,8 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-10"
   updatedAt="2026-05-10"
   readTime="9 min read"
+
+  faqs={faqs}
 >
 
 <div class="tldr-box">

@@ -1,5 +1,16 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Is Claude available in India?`, answer: `Yes. Claude works in India without VPN. You can sign up with an Indian phone number and email.` },
+  { question: `Why is everyone switching to Claude in India?`, answer: `For text-heavy work, writing, coding, legal/business documents, Claude consistently produces higher-quality output than ChatGPT at the same price. Word-of-mouth among Indian professionals has been strong since late 2024.` },
+  { question: `Does Claude support Hindi and Indian languages?`, answer: `Yes. Hindi is production-quality. Tamil, Bengali, Marathi, Telugu, and Gujarati work well. Performance on Indian languages is comparable to or slightly better than ChatGPT for most professional use cases.` },
+  { question: `Can I use Claude for client work as an Indian freelancer?`, answer: `Yes, and many Indian freelancers do. The privacy default (no training on consumer chats) makes it safer for client work than free-tier ChatGPT. See our freelancer guide.` },
+  { question: `Claude Pro vs ChatGPT Plus, which should an Indian get first?`, answer: `If your work is mostly text, Claude Pro. If you need image generation and voice, ChatGPT Plus. If you can afford ₹4,000/month, get both. Detailed comparison: ChatGPT vs Claude for Indians.` },
+  { question: `Is there an Indian alternative to Claude?`, answer: `Sarvam AI and Ola Krutrim are India-built models worth knowing. Their performance on Indian languages is sometimes better than Claude's, but the general reasoning quality still trails. Watch this space.` },
+];
+const reviewedItem = { name: 'Claude', url: 'https://claude.ai', priceInr: '2005', categoryLabel: 'SaaS' };
+const rating = { value: 4.6, best: 5 };
 ---
 <ArticleLayout
   title="Claude AI in India 2026: How to Access, Pay, and Use It Like a Pro"
@@ -9,6 +20,10 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-08"
   updatedAt="2026-05-08"
   readTime="8 min read"
+
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
 >
 
 <div class="tldr-box">

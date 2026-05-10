@@ -1,5 +1,15 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Is ChatGPT free in India?`, answer: `Yes. The free tier works in India without any restrictions. You just need a phone number to sign up, Indian numbers are accepted.` },
+  { question: `Why does my Indian debit card get rejected on ChatGPT?`, answer: `Most Indian debit cards block international transactions by default. You need to either enable international transactions in your bank app, or use a forex card like Niyo Global, HDFC Forex Plus, or IDFC FIRST Forex.` },
+  { question: `Can I share my ChatGPT Plus account with family in India?`, answer: `Officially no, OpenAI's terms allow only personal use. Practically, many Indian families do share accounts and don't get caught. Use at your own risk; sharing widely (4+ devices) does trigger flags.` },
+  { question: `Does ChatGPT understand Hindi well?`, answer: `Yes, Hindi performance is now production-grade. You can have full conversations in Hindi, Hinglish, or mixed languages. Output quality is comparable to English for most tasks.` },
+  { question: `Is ChatGPT safe for Indian businesses to use with confidential data?`, answer: `By default, OpenAI may train on your free-tier chats. For business use, either turn off chat history (privacy mode) or use the Team/Enterprise tier where data isn't used for training. For genuinely sensitive data, Claude's default policies are stricter.` },
+];
+const reviewedItem = { name: 'ChatGPT', url: 'https://chat.openai.com', priceInr: '1994', categoryLabel: 'SaaS' };
+const rating = { value: 4.4, best: 5 };
 ---
 <ArticleLayout
   title="ChatGPT in India 2026: Pricing, Payment, GST, and What Actually Works"
@@ -9,6 +19,10 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   publishedAt="2026-05-08"
   updatedAt="2026-05-08"
   readTime="8 min read"
+
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
 >
 
 <div class="tldr-box">

@@ -1,0 +1,37 @@
+---
+// Brand badge for an AI tool. SVG brands tint via CSS mask so they pick up the brand
+// color; PNG brands render as <img>. Sizes: sm 32 / md 40 / lg 56 / xl 80.
+const { slug, name, size = 'md' } = Astro.props;
+const sizes = { sm: 32, md: 40, lg: 56, xl: 80 };
+const px = sizes[size] || sizes.md;
+
+const brandColors = {
+  chatgpt: '#10A37F',
+  claude: '#D97757',
+  gemini: '#4285F4',
+  notion: '#000000',
+  canva: '#00C4CC',
+  perplexity: '#1FB8CD',
+  copilot: '#1B1B3A',
+  midjourney: '#000000',
+};
+const svgBrands = new Set(['claude', 'gemini', 'notion', 'perplexity', 'copilot']);
+const pngBrands = new Set(['chatgpt', 'canva', 'midjourney']);
+const color = brandColors[slug] || '#1B1B3A';
+const isSvg = svgBrands.has(slug);
+const isPng = pngBrands.has(slug);
+---
+<span
+  class={`tool-logo tool-logo-${slug}`}
+  style={`width:${px}px;height:${px}px;`}
+  aria-label={name || slug}
+>
+  {isSvg && (
+    <span
+      class="tool-logo-mask"
+      style={`background-color:${color};-webkit-mask:url(/logos/${slug}.svg) center/contain no-repeat;mask:url(/logos/${slug}.svg) center/contain no-repeat;`}
+      aria-hidden="true"
+    ></span>
+  )}
+  {isPng && <img src={`/logos/${slug}.png`} alt={name || slug} width={px} height={px} loading="lazy" decoding="async" />}
+</span>

@@ -1,0 +1,89 @@
+---
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+---
+<ArticleLayout
+  title="Our Review Methodology"
+  metaTitle="Methodology, How India's Best AI Tools Reviews Are Conducted"
+  description="How each AI tool is tested, scored, and reviewed for Indian users. The criteria we use, the data we update monthly, and where we let readers verify our work."
+  kicker="Methodology"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="4 min read"
+>
+
+<p>This page explains how reviews on India's Best AI Tools are produced and what readers can expect. It is the one page we ask you to read before treating any of our recommendations as authoritative.</p>
+
+<h2>The five things we test on every tool</h2>
+
+<h3>1. Indian payment workflow</h3>
+<p>We attempt to subscribe with the most common Indian payment methods, in this order, regular Indian debit card (HDFC, SBI, ICICI), UPI, Indian credit card without enabling international transactions, Indian credit card with international transactions enabled, and a forex card (Niyo Global, HDFC Forex Plus, IDFC FIRST). We document which step succeeds and which error message appears at each failure. This goes into the "How to pay" section of every review.</p>
+
+<h3>2. INR pricing with GST</h3>
+<p>We capture the price seen at the Indian checkout, convert from USD if applicable using the prevailing exchange rate, and break it into base price and 18% GST so readers know the actual amount that will hit their card. We re-check pricing monthly. Updates show up on each tool's review page and on our consolidated <a href="/pricing-in-inr/">INR pricing page</a>.</p>
+
+<h3>3. GST invoice and input credit</h3>
+<p>We add a GSTIN at checkout where possible, request the tax invoice, and verify the document is acceptable for input credit. If the tool doesn't issue a proper Indian tax invoice (it happens), we note that explicitly.</p>
+
+<h3>4. Real Indian use cases</h3>
+<p>For each tool, we run it through five to seven typical Indian work scenarios that match the tool's claimed strengths. For a writing tool, that means drafting a Gmail reply in Hinglish, summarising an Indian news piece, generating a client proposal for an Indian SME, writing a LinkedIn post that doesn't sound American, and so on. The "Best Indian use cases" section is built from what worked. The "What it's bad at" section is built from what didn't.</p>
+
+<h3>5. Indian and regional language quality</h3>
+<p>We test Hindi and a sample of regional languages (typically Tamil, Bengali, and Marathi) to verify production-grade output. Many global tools claim Indian language support that breaks down on real-world prompts, we surface that.</p>
+
+<h2>What we don't test (and why)</h2>
+
+<ul>
+  <li><strong>Benchmark scores.</strong> Public AI benchmarks (MMLU, GPQA, HumanEval) are useful as proxies but rarely match the lived quality of using a tool for real Indian work. We cite benchmarks only when they correlate with our hands-on findings.</li>
+  <li><strong>Marketing claims.</strong> We don't reproduce vendor marketing copy or feature lists. If a feature is in the marketing material but doesn't materially affect the Indian user's experience, it doesn't get a paragraph.</li>
+  <li><strong>One-off bugs.</strong> Bugs that we hit once but couldn't reproduce don't make it into the review. Reproducible payment failures and language failures do.</li>
+</ul>
+
+<h2>Our recommendation framework</h2>
+
+<p>Every review ends with a final verdict that follows one of four patterns:</p>
+
+<ul>
+  <li><strong>Recommended for most Indian users in this category.</strong> Use this tool unless you have a specific reason not to.</li>
+  <li><strong>Recommended for a specific Indian audience.</strong> Use this if you fit the profile (e.g., "if you live inside Google Workspace").</li>
+  <li><strong>Stay on the free tier.</strong> Don't pay yet. The free tier solves your problem.</li>
+  <li><strong>Skip.</strong> Use a different tool. We list the alternative.</li>
+</ul>
+
+<p>We try to be specific about which Indian audience the recommendation applies to. "Best for Indian freelancers who already use Notion" is more useful than "Best for productivity".</p>
+
+<h2>What "honest" looks like in practice</h2>
+
+<h3>We say negative things about tools we have an affiliate relationship with</h3>
+<p>Our ChatGPT review explicitly says, "If you're a casual user (a few queries a week), stay on free." That advice loses us potential affiliate revenue. We write it anyway because it's the right call for the reader.</p>
+
+<h3>We don't hide the comparisons that hurt our links</h3>
+<p>If a free tool beats a paid tool we have an affiliate link to, we say so. Our <a href="/vs/chatgpt-vs-gemini-india/">ChatGPT vs Gemini comparison</a> openly recommends Gemini for most Indian users despite ChatGPT having a more established affiliate program.</p>
+
+<h3>We disclose where the affiliate signal is</h3>
+<p>We use affiliate links on some tool reviews. The footer of every page carries the disclosure. If you want to support us, click through the affiliate link before subscribing. If you'd rather not, the price is identical when you go directly to the tool's site.</p>
+
+<h2>Update cadence</h2>
+
+<ul>
+  <li><strong>Pricing</strong>, re-checked monthly</li>
+  <li><strong>Free tier limits</strong>, re-checked quarterly</li>
+  <li><strong>Payment workflow</strong>, re-tested when readers report changes</li>
+  <li><strong>Recommendations</strong>, revisited when a major model release shifts the calculus</li>
+</ul>
+
+<h2>How to flag an error</h2>
+
+<p>If you spot a factual error, a stale price, a payment method that has started or stopped working, or a recommendation that no longer holds in your experience, email us at hello@indiasbestaitools.com. We'll either correct the article or reply explaining why we still think the existing position is right. Either way, you'll get a response within a week.</p>
+
+<h2>Conflicts of interest</h2>
+
+<p>The site operator(s) may hold subscriptions to the tools reviewed (we use the tools we recommend). The site operator(s) do not hold equity in any of the AI tool companies covered. When that changes, the disclosure on this page will be updated.</p>
+
+<h2>Related</h2>
+<ul>
+  <li><a href="/about/">About this site</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+  <li><a href="/guides/pay-for-ai-tools-india/">How to pay for AI tools from India</a></li>
+</ul>
+
+</ArticleLayout>

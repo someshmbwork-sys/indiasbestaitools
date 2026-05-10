@@ -10,14 +10,25 @@ export interface Props {
   publishedAt?: string;
   updatedAt?: string;
   type?: 'article' | 'website';
+  ogImage?: string;
 }
 
 const {
-  title, description, canonical, publishedAt = '2026-05-08', updatedAt = '2026-05-08', type = 'article', } = Astro.props;
+  title, description, canonical, publishedAt = '2026-05-08', updatedAt = '2026-05-08', type = 'article', ogImage: ogImageOverride } = Astro.props;
 
 const siteUrl = 'https://www.indiasbestaitools.com';
 const fullCanonical = canonical || siteUrl + Astro.url.pathname;
-const ogImage = siteUrl + '/og-default.png';
+
+// Auto-derive per-page OG image from URL pathname if no override given.
+function deriveOgFromPath(pathname) {
+  if (!pathname || pathname === '/' || pathname === '/index.html') return '/og/home.png';
+  const parts = pathname.replace(/\/$/, '').split('/').filter(Boolean);
+  if (parts.length === 0) return '/og/home.png';
+  // last segment becomes the slug, e.g. /tools/chatgpt-india/ -> chatgpt-india
+  return `/og/${parts[parts.length - 1]}.png`;
+}
+
+const ogImage = siteUrl + (ogImageOverride || deriveOgFromPath(Astro.url.pathname));
 ---
 <!DOCTYPE html>
 <html lang="en">

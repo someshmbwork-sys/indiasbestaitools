@@ -1,0 +1,166 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+<ArticleLayout
+  title="GitHub Copilot in India 2026: INR Pricing, GST, and How Indian Devs Use It"
+  metaTitle="GitHub Copilot India 2026: Price in INR, GST, Free Tier, Setup"
+  description="GitHub Copilot for Indian software developers. Free vs Pro vs Business pricing in INR, IDE setup, payment workflow, GST handling, and where Copilot beats Claude or Cursor for Indian dev teams."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="6 min read"
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Copilot for Indians</h3>
+  <p>The fastest path to in-editor AI for Indian developers. Free tier is now genuinely useful (no longer a 30-day trial). Pro at ~₹845/month is among the cheapest Pro AI subscriptions, and payment via GitHub accepts Indian cards directly without forex card hassle for most users.</p>
+  <a href="https://github.com/features/copilot" class="cta-button">Try Copilot (free)</a>
+</div>
+
+<p>For Indian developers, GitHub Copilot is the most boring "everyone has it" recommendation, and that's exactly why it's the right starting point. It plugs into VS Code, JetBrains IDEs, Visual Studio, Vim, Neovim, and Xcode in under 5 minutes. The autocomplete works at typing speed, the chat works in the editor, and the agent mode handles multi-file edits.</p>
+
+<h2>What Copilot costs Indian users</h2>
+
+<table>
+  <thead>
+    <tr><th>Plan</th><th>Sticker</th><th>Approx INR</th><th>+ 18% GST</th><th>You pay (₹)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Free</td><td>$0</td><td>₹0</td><td>—</td><td>₹0</td></tr>
+    <tr><td>Pro</td><td>$10/mo</td><td>~₹845</td><td>~₹152</td><td><strong>~₹997</strong></td></tr>
+    <tr><td>Pro+ (with Claude/GPT-5)</td><td>$39/mo</td><td>~₹3,296</td><td>~₹593</td><td><strong>~₹3,889</strong></td></tr>
+    <tr><td>Business</td><td>$19/user/mo</td><td>~₹1,606</td><td>~₹289</td><td><strong>~₹1,895/user</strong></td></tr>
+    <tr><td>Enterprise</td><td>$39/user/mo</td><td>~₹3,296</td><td>~₹593</td><td><strong>~₹3,889/user</strong></td></tr>
+  </tbody>
+</table>
+
+<p><em>Free for verified students, teachers, and maintainers of popular open-source projects (the GitHub Education program is genuinely usable in India, get yourself enrolled if you qualify).</em></p>
+
+<h2>Free vs Pro</h2>
+
+<h3>Free tier gives you</h3>
+<ul>
+  <li>Up to 2,000 code completions per month</li>
+  <li>Up to 50 chat messages per month</li>
+  <li>Choice between GPT-4o and Claude (limited)</li>
+  <li>Access to Copilot in any supported IDE</li>
+  <li>Pull request summaries (limited per month)</li>
+</ul>
+
+<h3>Pro adds</h3>
+<ul>
+  <li>Unlimited completions and chat (with fair-use cap)</li>
+  <li>Premium model selection (Claude 4 Sonnet, GPT-5)</li>
+  <li>Agent mode (multi-file edits, autonomous loops)</li>
+  <li>Code review on pull requests</li>
+  <li>Higher monthly premium request quota</li>
+  <li>Priority access during peak hours</li>
+</ul>
+
+<h3>Pro+ adds</h3>
+<ul>
+  <li>Larger premium request quota for top-tier models</li>
+  <li>Highest priority access</li>
+  <li>Useful only if you genuinely use agent mode every day</li>
+</ul>
+
+<h2>How to pay for Copilot from India</h2>
+
+<ul>
+  <li><strong>Indian credit cards</strong>, Most Visa/Mastercard credit cards work directly</li>
+  <li><strong>Indian debit cards</strong>, Mostly work; some banks need international transactions enabled</li>
+  <li><strong>PayPal</strong>, Linked to Indian bank works</li>
+  <li><strong>UPI</strong>, Not directly supported</li>
+  <li><strong>GitHub for Education students</strong>, Free, no payment needed</li>
+</ul>
+
+<p>Friction is lower than ChatGPT or Claude in our testing, more cards work without enabling international transactions.</p>
+
+<h2>GST handling</h2>
+
+<ul>
+  <li>GitHub charges 18% GST on Indian Pro subscriptions</li>
+  <li>For business plans, add organization GSTIN at checkout</li>
+  <li>Tax invoice is downloadable from GitHub Settings, Billing</li>
+  <li>Pro for individual devs: add personal GSTIN if you have one (consultants, freelancers)</li>
+  <li>Business plan with GSTIN gives full input credit</li>
+</ul>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Indian software developers in service companies</h3>
+<p>Where Copilot earns its keep, generating boilerplate, writing tests, refactoring legacy Java/PHP codebases, and answering "why does this code do this" questions about codebases you've inherited. Copilot's PR summaries also reduce the daily standup tax.</p>
+
+<h3>Indian product startups (5-50 engineers)</h3>
+<p>Business plan at ~₹1,895/user/month. The ROI math is straightforward, if Copilot saves each developer one hour per week, the team payback is ~10x. Most teams report 2-5 hours saved per week.</p>
+
+<h3>Solo founders and indie hackers</h3>
+<p>Pro at ~₹997/month. With agent mode, you can ship features faster than you could otherwise. Pair with Claude Pro for the design conversations.</p>
+
+<h3>Computer Science students</h3>
+<p>Free via GitHub Student Developer Pack. Get verified, then enable Copilot. This is one of the most valuable freebies in the Indian student tech stack.</p>
+
+<h3>Data scientists and analysts</h3>
+<p>Works inside JupyterLab and VS Code. Auto-completing pandas chains and generating charts is faster with Copilot than with ChatGPT alone.</p>
+
+<h2>What Copilot is bad at</h2>
+
+<ul>
+  <li><strong>Architectural conversations</strong>, Better in chat with Claude or ChatGPT, then come back to Copilot for the implementation</li>
+  <li><strong>Niche or proprietary languages</strong>, Strong on JavaScript, Python, TypeScript, Java, Go, Rust, PHP. Weaker on COBOL, Delphi, Indian-specific stacks like banking COBOL.</li>
+  <li><strong>Hindi or regional language code comments</strong>, Possible but not optimized</li>
+  <li><strong>Long planning documents</strong>, Use Claude or ChatGPT, then implement with Copilot</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+<ul>
+  <li><strong>Cursor</strong>, More aggressive, more expensive (~$20/month)</li>
+  <li><strong>Claude Code</strong>, Stronger reasoning, more recent. <a href="/tools/claude-india/">Read Claude review</a></li>
+  <li><strong>Codeium / Windsurf</strong>, Free tier with different tradeoffs</li>
+  <li><strong>Tabnine</strong>, Older, less aggressive than Copilot</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Is GitHub Copilot free for Indian students?</h3>
+  <p>Yes, via GitHub Student Developer Pack. Verify with your college email or college ID. Renewable annually while you're a student.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Copilot accept UPI in India?</h3>
+  <p>Not directly. Indian credit cards work for most users without forex hassle. Many Indian debit cards also work without enabling international transactions.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Will my company get a GST input credit on Copilot Business?</h3>
+  <p>Yes, if you add the company GSTIN under organization billing settings before subscribing. Tax invoices are auto-generated.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Should I use Copilot or Claude for coding from India?</h3>
+  <p>Both, in different roles. Copilot for in-editor autocomplete and quick chat. Claude (or ChatGPT) for architectural conversations and complex multi-file refactors. Cursor and Claude Code blur the line; pick based on workflow preference.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Copilot leak my company's code?</h3>
+  <p>By default, Pro plan does not train on your code. Business plan has stricter contractual data protection. For sensitive enterprise work, the Business plan is the safe default.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>For any Indian developer who hasn't yet adopted in-editor AI, Copilot is the lowest-friction starting point. The free tier is genuine, the Pro plan is among the cheapest serious AI subscriptions, and the IDE integration just works.</p>
+
+<p>If you're already a Cursor or Claude Code user, you don't need Copilot too. If you're not, start here, then graduate to whatever fits your workflow.</p>
+
+<a href="https://github.com/features/copilot" class="cta-button">Start with Copilot (free)</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/for/engineers/">Best AI tools for Indian software engineers</a></li>
+  <li><a href="/tools/claude-india/">Claude in India: full review</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+  <li><a href="/guides/pay-for-ai-tools-india/">How to pay for AI tools from India</a></li>
+</ul>
+
+</ArticleLayout>

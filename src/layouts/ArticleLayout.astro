@@ -14,16 +14,7 @@ export interface Props {
 }
 
 const {
-  title,
-  metaTitle,
-  description,
-  kicker,
-  publishedAt,
-  updatedAt,
-  readTime = '8 min read',
-  toolName,
-  toolColor = 'mint',
-} = Astro.props;
+  title, metaTitle, description, kicker, publishedAt, updatedAt, readTime = '8 min read', toolName, toolColor = 'mint', } = Astro.props;
 ---
 <BaseLayout
   title={metaTitle}
@@ -63,14 +54,14 @@ const {
   </section>
 
   <article class="max-w-3xl mx-auto px-6 pb-16">
-    <div class="prose-content reveal">
+    <div class="prose-content">
       <slot />
     </div>
 
     <div class="mt-16 pt-8 border-t-2 border-dashed border-ink/15">
       <span class="kicker">Honest disclosure</span>
       <p class="text-sm text-ink-soft leading-relaxed">
-        Some links on this page are affiliate links. If you sign up via our link, we earn a small commission at no extra cost to you. We only recommend tools we'd actually use ourselves &mdash; every recommendation here is based on independent testing.
+        Some links on this page are affiliate links. If you sign up via our link, we earn a small commission at no extra cost to you. We only recommend tools we'd actually use ourselves, every recommendation here is based on independent testing.
       </p>
     </div>
   </article>

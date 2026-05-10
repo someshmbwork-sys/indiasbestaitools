@@ -5,12 +5,11 @@ const year = new Date().getFullYear();
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-4 gap-8 pb-10 border-b border-bg/15 mb-6">
       <div class="md:col-span-2">
-        <div class="logo mb-3" style="color: var(--bg);">
-          <span class="logo-mark" style="background: var(--bg); color: var(--ink);">&#9733;</span>
-          <span>India's<span class="logo-dot mx-1">&middot;</span>Best AI</span>
-        </div>
+        <a href="/" class="inline-block mb-4">
+          <img src="/logo-white.png" alt="India's Best AI Tools" class="h-20 md:h-24 w-auto" width="264" height="96" />
+        </a>
         <p class="text-sm text-bg/70 max-w-md mb-5 leading-relaxed">
-          An independent review journal for AI tools — with INR pricing, GST included, and payment workflows that actually work for Indian users.
+          An independent review journal for AI tools, with INR pricing, GST included, and payment workflows that actually work for Indian users.
         </p>
         <form id="newsletter" onsubmit="event.preventDefault(); alert('Newsletter signup will be wired up shortly.');" class="flex max-w-sm">
           <input type="email" placeholder="your@email.com" required class="flex-1 px-4 py-3 bg-bg/10 border-2 border-bg/20 border-r-0 rounded-l-full text-bg text-sm placeholder:text-bg/50 focus:outline-none focus:border-yellow" />

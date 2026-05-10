@@ -1,35 +1,34 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "India's Best AI Tools — Honest Reviews with INR Pricing";
+const title = "India's Best AI Tools, Honest Reviews with INR Pricing";
 const description = "AI tool reviews built for Indians. INR pricing, GST guidance, payment workflows, and use-cases for freelancers, creators, CAs, and small businesses.";
 ---
 <BaseLayout title={title} description={description} type="website">
 
-  <!-- HERO -->
-  <section class="relative overflow-hidden pt-16 pb-20">
-    <div class="blob blob-pink" style="width: 520px; height: 520px; top: -120px; right: -120px;"></div>
-    <div class="blob blob-blue" style="width: 420px; height: 420px; top: 200px; left: -120px;"></div>
-    <div class="blob blob-yellow" style="width: 320px; height: 320px; bottom: -80px; right: 25%;"></div>
-
-    <svg class="absolute pointer-events-none z-10 hidden md:block" style="top: 18%; right: 8%; animation: float 5s ease-in-out infinite;" width="60" height="60" viewBox="0 0 60 60"><path d="M30 5 L35 25 L55 30 L35 35 L30 55 L25 35 L5 30 L25 25 Z" fill="#FF3D7F" stroke="#1B1B3A" stroke-width="2"/></svg>
-    <svg class="absolute pointer-events-none z-10 hidden md:block" style="bottom: 10%; left: 6%; animation: float2 7s ease-in-out infinite;" width="50" height="50" viewBox="0 0 50 50"><circle cx="25" cy="25" r="22" fill="#3B6EFF" stroke="#1B1B3A" stroke-width="2"/></svg>
-    <svg class="absolute pointer-events-none z-10 hidden md:block" style="top: 50%; right: 22%; animation: float 6s ease-in-out infinite 0.5s;" width="40" height="40" viewBox="0 0 40 40"><rect x="4" y="4" width="32" height="32" fill="#00D4A0" stroke="#1B1B3A" stroke-width="2" transform="rotate(15 20 20)"/></svg>
+  <!-- HERO with animated gradient wave -->
+  <section class="hero-wave relative overflow-hidden pt-16 pb-20">
+    <div class="hero-wave-bg" aria-hidden="true">
+      <span class="hw-rose"></span>
+      <span class="hw-fuchsia"></span>
+      <span class="hw-lime"></span>
+      <span class="hw-rose-2"></span>
+    </div>
 
     <div class="max-w-6xl mx-auto px-6 relative z-20">
-      <span class="pill mb-6"><span class="pill-ticker"></span> May 2026 issue &middot; live now</span>
-      <h1 class="mb-6 max-w-[18ch]">
-        AI tools, reviewed <span class="highlight">honestly</span> &mdash; with the <span class="text-pink">INR pricing</span> and Indian context global sites <span class="handwrite">skip.</span>
+      <span class="pill mb-6"><span class="pill-ticker"></span> Updated &middot; May 2026</span>
+      <h1 class="mb-6 max-w-[20ch]">
+        Find the right <span class="highlight">AI tool</span> for your work, at the price you'll <span class="text-pink">actually pay</span> in <span class="handwrite">India.</span>
       </h1>
-      <p class="text-xl text-ink-soft max-w-[56ch] leading-snug mb-9">
-        Most "best AI tools" lists were written for Americans. This one is for the Indian freelancer paying GST, the CA firm worried about data, and the creator wondering if a &#8377;2,000 / month subscription is worth it.
+      <p class="text-xl text-ink-soft max-w-[60ch] leading-snug mb-9">
+        AI tools are software that can write your emails, design posters, summarise meetings, or write code for you, for example ChatGPT, Claude, Notion, and Canva. Most charge around &#8377;2,000 per month from India after tax. We tested 7 of them honestly. Here's what actually works for Indian users.
       </p>
       <div class="flex flex-wrap gap-3 items-center">
-        <a href="/for/freelancers/" class="btn btn-primary">Browse 7 reviews <span class="arrow">&rarr;</span></a>
-        <a href="/pricing-in-inr/" class="btn btn-secondary">See INR pricing</a>
+        <a href="/for/freelancers/" class="btn btn-primary">Read the 6 starter guides <span class="arrow">&rarr;</span></a>
+        <a href="/pricing-in-inr/" class="btn btn-secondary">See all prices in rupees</a>
         <span class="ml-2 text-sm text-ink-soft flex items-center gap-2">
           <span class="text-orange text-base tracking-wider">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          Independent &middot; no paid placements
+          Honest reviews &middot; no sponsored content
         </span>
       </div>
     </div>
@@ -57,83 +56,193 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
     </div>
   </div>
 
-  <!-- STATS -->
-  <section class="max-w-6xl mx-auto px-6 py-20 reveal">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="stat-card yellow">
-        <div class="stat-corner">tested</div>
-        <div class="stat-num">7</div>
-        <div class="stat-label">in-depth tool reviews this issue</div>
+  <!-- WHAT YOU CAN DO WITH THESE TOOLS -->
+  <section class="max-w-6xl mx-auto px-6 py-16 reveal">
+    <div class="mb-10 max-w-[720px]">
+      <span class="section-eyebrow yellow">In simple words</span>
+      <h2>What can these AI tools <span class="handwrite">actually do</span> for you?</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="glow-card">
+        <span class="glow-tag">Writing</span>
+        <h3>Write emails, posts, and reports faster</h3>
+        <p>Tell ChatGPT or Claude what you want to say, and it writes a first draft for you. You edit and send. Saves 30 to 60 minutes per long email or report.</p>
       </div>
-      <div class="stat-card pink">
-        <div class="stat-corner">in INR</div>
-        <div class="stat-num">&#8377;84<span class="small">.50</span></div>
-        <div class="stat-label">USD reference rate, updated weekly</div>
+      <div class="glow-card">
+        <span class="glow-tag">Design</span>
+        <h3>Make posters, social posts, and presentations</h3>
+        <p>Canva and similar tools let you type what you want and get a finished design. No need to learn Photoshop. Useful for shop flyers, Instagram posts, or quick slide decks.</p>
       </div>
-      <div class="stat-card blue">
-        <div class="stat-corner">rejected</div>
-        <div class="stat-num">16<span class="small">%</span></div>
-        <div class="stat-label">of Indian cards on first try</div>
-      </div>
-      <div class="stat-card mint">
-        <div class="stat-corner">testing</div>
-        <div class="stat-num">47<span class="small">hrs</span></div>
-        <div class="stat-label">spent per review, on average</div>
+      <div class="glow-card">
+        <span class="glow-tag">Office work</span>
+        <h3>Summarise meetings and long PDFs</h3>
+        <p>Upload a 30-page contract or a 1-hour meeting recording. Within seconds, you get the key points in a paragraph. Saves hours every week for managers and CAs.</p>
       </div>
     </div>
   </section>
 
-  <!-- TOPIC CARDS -->
-  <section class="max-w-6xl mx-auto px-6 pb-20 reveal">
-    <div class="mb-12 max-w-[720px]">
-      <span class="section-eyebrow pink">Start here</span>
-      <h2>The <span class="handwrite">6 guides</span> we'd send to a friend in India today.</h2>
-      <p class="text-lg text-ink-soft mt-3">Honest, India-specific, and actually useful. No SEO listicle slop.</p>
+  <!-- BY PROFESSION -->
+  <section class="max-w-6xl mx-auto px-6 py-16 reveal">
+    <div class="mb-10 max-w-[720px]">
+      <span class="section-eyebrow blue">By profession</span>
+      <h2>Pick the right AI tools for <span class="handwrite">your work</span>.</h2>
+      <p class="text-lg text-ink-soft mt-3">Different jobs need different tools. We have a guide for each profession with the best 3 picks, INR pricing, and use cases tailored to Indian work.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-5">
-
-      <a href="/vs/chatgpt-vs-claude-india/" class="topic-card bg-pink">
-        <span class="topic-tag">Comparison</span>
-        <h3>ChatGPT vs Claude in India: which one for Indians?</h3>
-        <p>Side-by-side test from an Indian user &mdash; pricing in INR, payment hassles, and which one actually understands "yaar".</p>
-        <div class="topic-foot"><span>12 min read</span><span class="read-arrow">&rarr;</span></div>
+    <div class="prof-grid">
+      <a href="/for/teachers/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">📚</span>
+        <span class="prof-name">For Teachers</span>
+        <span class="prof-meta">Lesson plans, grading, worksheets. Best 3 tools for school and college teachers in India.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
-
-      <a href="/for/freelancers/" class="topic-card bg-yellow">
-        <span class="topic-tag">Profession</span>
-        <h3>Best AI tools for Indian freelancers in 2026</h3>
-        <p>8 tools that earn back their subscription in your first invoice &mdash; picked for the Indian freelance economy.</p>
-        <div class="topic-foot"><span class="price-tag">&#8377;0 &ndash; 2,499</span><span class="read-arrow">&rarr;</span></div>
+      <a href="/for/engineers/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">💻</span>
+        <span class="prof-name">For Engineers</span>
+        <span class="prof-meta">Code review, system design, tests, in-editor autocomplete. Best 3 tools for Indian software developers.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
-
-      <a href="/tools/chatgpt-india/" class="topic-card bg-blue">
-        <span class="topic-tag">Tool review</span>
-        <h3>ChatGPT in India: pricing, GST, payment, alternatives</h3>
-        <p>UPI doesn't work. Cards get rejected. We mapped every payment route Indians actually use.</p>
-        <div class="topic-foot"><span class="price-tag">&#8377;2,358 / mo</span><span class="read-arrow">&rarr;</span></div>
+      <a href="/for/doctors/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">🩺</span>
+        <span class="prof-name">For Doctors</span>
+        <span class="prof-meta">Patient communication, research summaries, handouts. Best 3 tools for Indian healthcare professionals.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
-
-      <a href="/tools/claude-india/" class="topic-card bg-mint">
-        <span class="topic-tag">Tool review</span>
-        <h3>Claude AI in India: how to access, pay, and use</h3>
-        <p>The fastest-growing AI tool of 2026 in India. Here's how to actually use it from anywhere in Bharat.</p>
-        <div class="topic-foot"><span class="price-tag">&#8377;2,005 / mo</span><span class="read-arrow">&rarr;</span></div>
+      <a href="/for/cas/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">📊</span>
+        <span class="prof-name">For CAs</span>
+        <span class="prof-meta">Client letters, audit summaries, GST research. Best 3 tools for Indian Chartered Accountants.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
-
-      <a href="/pricing-in-inr/" class="topic-card bg-cream">
-        <span class="topic-tag">Reference</span>
-        <h3>AI tools pricing in INR (with GST + payment options)</h3>
-        <p>Every major AI tool's actual cost to an Indian user, including the 18% GST nobody mentions.</p>
-        <div class="topic-foot"><span>Updated weekly</span><span class="read-arrow">&rarr;</span></div>
+      <a href="/for/freelancers/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">✍️</span>
+        <span class="prof-name">For Freelancers</span>
+        <span class="prof-meta">Client work, content, design, project management. Best 8 tools for Indian freelancers.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
-
-      <a href="/guides/pay-for-ai-tools-india/" class="topic-card bg-lilac">
-        <span class="topic-tag">How-to</span>
-        <h3>How to pay for AI tools from India (UPI, cards, INR)</h3>
-        <p>Why your HDFC card gets rejected, and the 5 workarounds that actually work in 2026.</p>
-        <div class="topic-foot"><span>10 min read</span><span class="read-arrow">&rarr;</span></div>
+      <a href="/for/creators/" class="prof-card">
+        <span class="prof-icon" aria-hidden="true">🎬</span>
+        <span class="prof-name">For Creators</span>
+        <span class="prof-meta">Scripts, thumbnails, captions, image generation. Best 3 tools for Indian YouTubers and creators.</span>
+        <span class="prof-cta">Read the guide <span aria-hidden="true">&rarr;</span></span>
       </a>
+    </div>
+  </section>
 
+  <!-- STATS -->
+  <section class="max-w-6xl mx-auto px-6 py-12 reveal">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="stat-card yellow">
+        <div class="stat-corner">tested</div>
+        <div class="stat-num">7</div>
+        <div class="stat-label">AI tools tested for Indian users</div>
+      </div>
+      <div class="stat-card pink">
+        <div class="stat-corner">conversion</div>
+        <div class="stat-num">&#8377;84<span class="small">.50</span></div>
+        <div class="stat-label">= 1 US dollar (used to convert prices)</div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-corner">payment</div>
+        <div class="stat-num">16<span class="small">%</span></div>
+        <div class="stat-label">of Indian cards rejected on first payment</div>
+      </div>
+      <div class="stat-card mint">
+        <div class="stat-corner">testing</div>
+        <div class="stat-num">47<span class="small">hrs</span></div>
+        <div class="stat-label">of testing behind every review</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CARDS — skew gradient -->
+  <section class="skew-stage py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-12 max-w-[720px]">
+        <span class="section-eyebrow yellow">Start here</span>
+        <h2 class="text-bg">The <span class="handwrite">6 guides</span> we'd send to a friend in India today.</h2>
+        <p class="text-lg text-bg/75 mt-3">Each guide answers one clear question. No jargon, no fluff.</p>
+      </div>
+      <div class="skew-grid">
+
+        <a href="/vs/chatgpt-vs-claude-india/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-1"></span>
+          <span class="skew-card-bg skew-grad-1"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">Comparison</span>
+            <h3>ChatGPT or Claude, which one should you pick?</h3>
+            <p>The two most popular AI chatbots, both priced around &#8377;2,000 a month. We tested both from India. One wins clearly for everyday work.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="/for/freelancers/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-5"></span>
+          <span class="skew-card-bg skew-grad-5"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">For freelancers</span>
+            <h3>The 8 best AI tools for Indian freelancers</h3>
+            <p>If you work freelance, these 8 tools save hours every week and pay for themselves on your first client invoice.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="/tools/chatgpt-india/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-3"></span>
+          <span class="skew-card-bg skew-grad-3"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">Tool review</span>
+            <h3>ChatGPT in India, full price &amp; payment guide</h3>
+            <p>ChatGPT is the most-used AI tool worldwide. Paying for it from India is harder than it should be. We list every payment method that actually works.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="/tools/claude-india/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-6"></span>
+          <span class="skew-card-bg skew-grad-6"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">Tool review</span>
+            <h3>Claude in India, how to use it &amp; how to pay</h3>
+            <p>Claude often writes better long emails and reports than ChatGPT, and the free tier is genuinely useful for daily work.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="/pricing-in-inr/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-2"></span>
+          <span class="skew-card-bg skew-grad-2"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">All prices</span>
+            <h3>What each AI tool actually costs in rupees</h3>
+            <p>Every popular AI tool's real monthly cost in INR, including the 18% Indian tax most websites don't mention. Updated weekly.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+        <a href="/guides/pay-for-ai-tools-india/" class="skew-card">
+          <span class="skew-card-bg-glow skew-grad-4"></span>
+          <span class="skew-card-bg skew-grad-4"></span>
+          <span class="skew-orb tl"></span>
+          <span class="skew-orb br"></span>
+          <div class="skew-card-body">
+            <span class="skew-card-tag">How-to guide</span>
+            <h3>5 ways to actually pay for AI tools from India</h3>
+            <p>UPI doesn't work on most international AI tools. Many Indian debit cards get rejected. Here are 5 payment methods that actually go through.</p>
+            <span class="skew-card-cta">Read more <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+
+      </div>
     </div>
   </section>
 
@@ -143,22 +252,22 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
     <div class="blob blob-blue" style="width: 500px; height: 500px; bottom: -200px; left: -150px; filter: blur(80px); opacity: 0.45;"></div>
     <div class="max-w-6xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <span class="section-eyebrow yellow mb-4">&#9733; Editor's pick</span>
-        <h2 class="text-bg mb-5">Should you buy <span class="handwrite text-yellow">ChatGPT</span> or <span class="handwrite text-yellow">Claude</span> in India?</h2>
-        <p class="text-bg/85 text-lg mb-7 max-w-[50ch]">One side-by-side test, run from India, with pricing in INR and notes on which card actually goes through. The answer surprised us.</p>
+        <span class="section-eyebrow yellow mb-4">&#9733; Most popular guide</span>
+        <h2 class="text-bg mb-5">Should you pay for <span class="handwrite text-yellow">ChatGPT</span> or <span class="handwrite text-yellow">Claude</span>?</h2>
+        <p class="text-bg/85 text-lg mb-7 max-w-[50ch]">Both cost about &#8377;2,000 per month. We used both daily for everyday work, emails, summaries, simple research, Hindi text. One handles Indian users better. The full comparison takes 12 minutes to read.</p>
         <a href="/vs/chatgpt-vs-claude-india/" class="btn btn-yellow">Read the comparison <span class="arrow">&rarr;</span></a>
       </div>
       <div class="bg-bg text-ink rounded-3xl p-8 border-2 border-ink shadow-[8px_8px_0_#FFD93D] rotate-1 hover:rotate-0 transition-transform duration-300">
-        <div class="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-6">
-          <div class="aspect-square rounded-2xl flex items-end p-4 font-extrabold text-xl border-2 border-ink bg-mint">ChatGPT</div>
+        <div class="grid grid-cols-[1fr_auto_1fr] gap-4 items-center text-center mb-6 py-4">
+          <div class="font-extrabold text-2xl md:text-3xl text-ink tracking-tight">ChatGPT</div>
           <div class="text-3xl font-extrabold text-pink -rotate-12">vs</div>
-          <div class="aspect-square rounded-2xl flex items-end p-4 font-extrabold text-xl border-2 border-ink bg-orange text-white">Claude</div>
+          <div class="font-extrabold text-2xl md:text-3xl text-ink tracking-tight">Claude</div>
         </div>
         <div class="grid grid-cols-2 gap-4 text-sm">
-          <div><div class="text-ink-soft mb-1 font-medium">Plus / mo with GST</div><div class="font-bold text-base">&#8377;2,358</div></div>
-          <div><div class="text-ink-soft mb-1 font-medium">Pro / mo with GST</div><div class="font-bold text-base">&#8377;2,005</div></div>
-          <div><div class="text-ink-soft mb-1 font-medium">Pays via UPI?</div><div class="font-bold text-base text-pink">No</div></div>
-          <div><div class="text-ink-soft mb-1 font-medium">Pays via UPI?</div><div class="font-bold text-base text-pink">No</div></div>
+          <div><div class="text-ink-soft mb-1 font-medium">Plus plan / month with tax</div><div class="font-bold text-base">&#8377;2,358</div></div>
+          <div><div class="text-ink-soft mb-1 font-medium">Pro plan / month with tax</div><div class="font-bold text-base">&#8377;2,005</div></div>
+          <div><div class="text-ink-soft mb-1 font-medium">UPI accepted?</div><div class="font-bold text-base text-pink">No</div></div>
+          <div><div class="text-ink-soft mb-1 font-medium">UPI accepted?</div><div class="font-bold text-base text-pink">No</div></div>
         </div>
       </div>
     </div>
@@ -167,9 +276,9 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
   <!-- PRICING -->
   <section class="max-w-6xl mx-auto px-6 py-20 reveal">
     <div class="mb-10 max-w-[720px]">
-      <span class="section-eyebrow blue">Live rate card</span>
-      <h2>What top AI tools <span class="text-pink">actually cost</span> in India.</h2>
-      <p class="text-lg text-ink-soft mt-3">Sticker prices in INR with 18% GST applied. Reference USD rate of &#8377;84.50, updated weekly.</p>
+      <span class="section-eyebrow blue">Latest prices</span>
+      <h2>What each AI tool <span class="text-pink">costs in rupees</span> from India.</h2>
+      <p class="text-lg text-ink-soft mt-3">These are the real amounts that hit your card after the 18% Indian tax. Based on &#8377;84.50 to a US dollar. Updated weekly.</p>
     </div>
     <div class="bg-bg-2 border-2 border-ink rounded-3xl p-6 md:p-8 shadow-pop">
       <table class="w-full">
@@ -177,9 +286,9 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
           <tr class="border-b-2 border-ink">
             <th class="text-left text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4">Tool</th>
             <th class="text-left text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4 hidden md:table-cell">Plan</th>
-            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4">USD</th>
-            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4">+18% GST</th>
-            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3">Total INR</th>
+            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4">Sticker price</th>
+            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3 pr-4">+ 18% tax</th>
+            <th class="text-right text-xs font-extrabold uppercase tracking-wider text-ink-soft pb-3">You pay</th>
           </tr>
         </thead>
         <tbody>
@@ -199,7 +308,7 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
           </tr>
           <tr class="border-b border-dashed border-ink/15 hover:bg-bg">
             <td class="py-3 pr-4 font-bold">Notion AI</td>
-            <td class="py-3 pr-4 hidden md:table-cell">Plus add-on</td>
+            <td class="py-3 pr-4 hidden md:table-cell">Add-on</td>
             <td class="py-3 pr-4 text-right font-mono text-sm text-ink-soft">$10.00</td>
             <td class="py-3 pr-4 text-right font-mono text-sm text-ink-soft">+ &#8377;149</td>
             <td class="py-3 text-right"><span class="font-extrabold bg-yellow border-2 border-ink rounded-lg px-2 py-1 inline-block">&#8377;979</span></td>
@@ -226,8 +335,8 @@ const description = "AI tool reviews built for Indians. INR pricing, GST guidanc
   <!-- BIG CTA -->
   <section class="max-w-6xl mx-auto px-6 py-12 reveal">
     <div class="bigcta-card pink">
-      <h2>One email a week. <span class="handwrite">Zero fluff.</span></h2>
-      <p>The newest tool review, the latest INR price changes, and the one thing Indian users need to know about AI this week.</p>
+      <h2>Get the new reviews <span class="handwrite">every Friday.</span></h2>
+      <p>One short email each week with the latest review, any price changes, and news that actually matters for AI users in India. Free to subscribe, easy to unsubscribe.</p>
       <a href="#newsletter" class="btn btn-yellow">Subscribe (free) <span class="arrow">&rarr;</span></a>
     </div>
   </section>

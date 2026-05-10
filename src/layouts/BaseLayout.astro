@@ -13,13 +13,7 @@ export interface Props {
 }
 
 const {
-  title,
-  description,
-  canonical,
-  publishedAt = '2026-05-08',
-  updatedAt = '2026-05-08',
-  type = 'article',
-} = Astro.props;
+  title, description, canonical, publishedAt = '2026-05-08', updatedAt = '2026-05-08', type = 'article', } = Astro.props;
 
 const siteUrl = 'https://www.indiasbestaitools.com';
 const fullCanonical = canonical || siteUrl + Astro.url.pathname;
@@ -56,23 +50,11 @@ const ogImage = siteUrl + '/og-default.png';
 
   {type === 'article' && (
     <script type="application/ld+json" set:html={JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      'headline': title,
-      'description': description,
-      'datePublished': publishedAt,
-      'dateModified': updatedAt,
-      'author': {
-        '@type': 'Organization',
-        'name': "India's Best AI Tools",
-        'url': siteUrl
-      },
-      'publisher': {
-        '@type': 'Organization',
-        'name': "India's Best AI Tools",
-        'url': siteUrl
-      },
-      'mainEntityOfPage': fullCanonical
+      '@context': 'https://schema.org', '@type': 'Article', 'headline': title, 'description': description, 'datePublished': publishedAt, 'dateModified': updatedAt, 'author': {
+        '@type': 'Organization', 'name': "India's Best AI Tools", 'url': siteUrl
+      }, 'publisher': {
+        '@type': 'Organization', 'name': "India's Best AI Tools", 'url': siteUrl
+      }, 'mainEntityOfPage': fullCanonical
     })} />
   )}
 

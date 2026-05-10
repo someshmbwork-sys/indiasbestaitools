@@ -15,8 +15,8 @@ const brandColors = {
   copilot: '#1B1B3A',
   midjourney: '#000000',
 };
-const svgBrands = new Set(['claude', 'gemini', 'notion', 'perplexity', 'copilot']);
-const pngBrands = new Set(['chatgpt', 'canva', 'midjourney']);
+const svgBrands = new Set(['gemini', 'notion', 'perplexity', 'copilot']);
+const pngBrands = new Set(['chatgpt', 'canva', 'midjourney', 'claude']);
 const color = brandColors[slug] || '#1B1B3A';
 const isSvg = svgBrands.has(slug);
 const isPng = pngBrands.has(slug);

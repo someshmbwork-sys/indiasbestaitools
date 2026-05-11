@@ -1,0 +1,138 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Does Augnito work with Indian English and accents?`, answer: `Yes, that's the whole reason it exists. The model is trained on Indian doctor speech patterns including Indian English pronunciation, Indian medication names, and Indian clinical terminology. Word error rate on Indian speech is substantially lower than generic global speech recognition tools.` },
+  { question: `Does Augnito accept UPI for payment?`, answer: `Yes. Augnito sells in INR through Indian billing, accepts UPI, Indian cards, and net banking. GST invoice with input credit is supported for clinics and hospitals.` },
+  { question: `Will it work in my OPD with a mid-range Windows laptop?`, answer: `Yes. The app runs on Windows, macOS, iOS, Android, and integrates with most major HIS/EMR systems through their plug-in or keyboard layer. Cloud transcription requires internet, so check your clinic's bandwidth before committing.` },
+  { question: `What does it cost for a solo Indian doctor?`, answer: `Pricing has shifted over time but the individual plan typically sits in the range of a few thousand rupees per month, with enterprise and hospital plans negotiated. Always check the live pricing page before subscribing; this is one of the few categories where Indian SaaS pricing is competitive with global voice tools.` },
+  { question: `Is it secure enough for patient data under Indian rules?`, answer: `Augnito complies with HIPAA-style controls and is positioned for Indian DPDP Act compliance. For hospital deployments, the enterprise plan adds SSO, audit logs, and signed BAA-equivalent agreements. Solo doctors using the consumer plan should still avoid dictating directly identifiable PHI into untrusted networks.` },
+];
+const reviewedItem = { name: 'Augnito', url: 'https://augnito.ai', priceInr: '2500', categoryLabel: 'SaaS' };
+const rating = { value: 4.6, best: 5 };
+---
+<ArticleLayout
+  title="Augnito Review for Indian Doctors 2026: AI Voice Dictation for Indian Clinical Workflow"
+  metaTitle="Augnito India Review 2026: AI Medical Dictation for Indian Doctors"
+  description="Augnito is the only voice dictation AI built for Indian medical accents and Indian clinical workflow. Honest review for solo doctors, OPDs, and hospitals. INR pricing, GST, EMR integration."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="6 min read"
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Augnito for Indian doctors</h3>
+  <p>This is the AI voice dictation tool every Indian doctor should at least trial. Global voice tools (Dragon, Otter, Apple Dictation) consistently mis-hear Indian medication names, Indian clinical terms, and Indian English pronunciation. Augnito is the only one trained on Indian doctor speech. INR pricing, UPI accepted, GST invoice, EMR integration. Worth the trial even if your clinic is small.</p>
+  <a href="https://augnito.ai" class="cta-button">Visit Augnito</a>
+</div>
+
+<p>If you are an Indian doctor and you have ever tried to dictate patient notes into Apple Dictation or a generic transcription tool, you already know the problem. Indian medication names ("Augmentin", "Crocin", "Pantoprazole") get auto-corrected to nonsense. Indian English pronunciations of "ECG", "TSH", "AFB" turn into something else. The doctor spends more time correcting than typing.</p>
+
+<p>Augnito is the only voice AI tool we have seen built specifically for Indian medical English. This review is the practical, honest take for solo doctors, clinic owners, and hospital administrators evaluating it in 2026.</p>
+
+<h2>What makes Augnito different from global voice AI</h2>
+
+<p>Generic speech recognition tools (Apple Dictation, Google Speech-to-Text, Otter, Whisper) are trained primarily on American and European English speech. They struggle with three things Indian doctors do every day:</p>
+
+<ul>
+  <li><strong>Indian English pronunciation</strong>, Words like "vitamin", "diabetes", "antibiotic" are pronounced differently in Indian English, and generic ASR systems mis-hear them at a much higher rate.</li>
+  <li><strong>Indian medication names</strong>, India has its own branded drug landscape (Crocin, Combiflam, Saridon, Pantop, Liv-52). Generic tools have never seen these brand names in training data, so they substitute them with something nearby.</li>
+  <li><strong>Indian clinical phrasing</strong>, Indian doctors dictate notes in a specific rhythm and order, mixing English, occasional Hindi, and clinical Latin. Generic tools mis-segment these.</li>
+</ul>
+
+<p>Augnito's model is trained on Indian doctor speech specifically. Word error rate on Indian medical dictation is substantially lower than generic ASR in our testing.</p>
+
+<h2>What Augnito costs and how to pay</h2>
+
+<p>Augnito sells in INR through Indian billing. UPI is supported. GST invoice with input credit is automatic for clinics and hospitals that add their GSTIN at checkout. Solo doctor plans, clinic plans, and hospital enterprise plans exist; live pricing changes, always check the official pricing page before subscribing.</p>
+
+<p>What we can say with confidence: the Indian payment story for Augnito is dramatically easier than any global voice tool. No forex card, no international transaction enabling, no $20 charge that turns into ₹2,358 with mystery currency fees. The price you see is the price on your card statement.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Solo OPD doctors</h3>
+<p>The clearest case. Family physicians, ENTs, dermatologists, and general practitioners in tier-1 and tier-2 cities can dictate patient notes between consults and have them appear in their EMR or paper-replacement app. Time saved per consultation typically falls in the 30-90 second range, which compounds to 30-45 minutes a day across a busy OPD.</p>
+
+<h3>Hospital chains</h3>
+<p>Apollo, Manipal, Fortis, AIIMS, and similar large institutions use Augnito at scale. Enterprise deployments include SSO, audit logs, integration with HIS/EMR systems like Plus91, eHat, Bahmni, and custom hospital stacks. Per-doctor cost at scale is competitive with global enterprise voice tools.</p>
+
+<h3>Radiology and pathology reporting</h3>
+<p>Reporting workflows for radiology and pathology are where voice dictation genuinely shifts productivity. Augnito's radiology-specific vocabulary handles Indian English calls of measurements, anatomical landmarks, and impression statements.</p>
+
+<h3>Telemedicine clinics</h3>
+<p>Online consultation platforms in India (Practo, 1mg, Tata 1mg Doc, Visit Health) increasingly support voice dictation via Augnito-style tools. If you run your own telemedicine setup, this is one of the cleanest productivity wins.</p>
+
+<h2>Where Augnito is not the right tool</h2>
+
+<ul>
+  <li><strong>You dictate primarily in regional Indian languages</strong>, Augnito is strongest in Indian English. Hindi support exists; Tamil, Telugu, Bengali, Marathi support is uneven. For full regional language clinical dictation, the gap remains.</li>
+  <li><strong>You need offline dictation</strong>, Most use cases require an internet connection for cloud transcription. Offline modes exist but are limited.</li>
+  <li><strong>You see fewer than 5-10 patients a day</strong>, The ROI shifts. A part-time consultant may not save enough time to justify the subscription versus typing.</li>
+  <li><strong>You need full HIS workflow automation</strong>, Augnito is voice in, text out, plus some EMR integration. It is not a replacement for a hospital information system.</li>
+</ul>
+
+<h2>Indian alternatives we have looked at</h2>
+
+<ul>
+  <li><strong>DeepScribe, Suki AI, Nuance Dragon Medical</strong>, Global tools, weaker on Indian accents, harder to pay for from India, expensive at enterprise.</li>
+  <li><strong>Whisper-based custom builds</strong>, Some hospitals run their own Whisper-fine-tuned models. Possible if you have a tech team. Otherwise Augnito is the off-the-shelf path.</li>
+  <li><strong>Google Speech-to-Text with medical model</strong>, Available via Google Cloud, requires technical integration, not designed for solo Indian doctors.</li>
+  <li><strong>Apple Dictation, Otter, Fireflies</strong>, General-purpose tools, decent for non-clinical notes, poor for actual patient documentation.</li>
+</ul>
+
+<h2>What to actually test before subscribing</h2>
+
+<ol>
+  <li>Dictate 5 typical patient notes from your specialty. Measure your correction rate (words you had to fix).</li>
+  <li>Test it on your three most-prescribed Indian medication names. Most generic ASR fails here. Augnito should not.</li>
+  <li>Verify it integrates with your existing EMR or note-taking app. If you use paper, that is fine; Augnito works as a stand-alone notepad too.</li>
+  <li>If you are a hospital decision-maker, do a 2-week pilot with 5-10 doctors before signing the enterprise contract.</li>
+</ol>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Does Augnito work with Indian English and accents?</h3>
+  <p>Yes, that's the whole reason it exists. The model is trained on Indian doctor speech patterns including Indian English pronunciation, Indian medication names, and Indian clinical terminology. Word error rate on Indian speech is substantially lower than generic global speech recognition tools.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Augnito accept UPI for payment?</h3>
+  <p>Yes. Augnito sells in INR through Indian billing, accepts UPI, Indian cards, and net banking. GST invoice with input credit is supported for clinics and hospitals.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Will it work in my OPD with a mid-range Windows laptop?</h3>
+  <p>Yes. The app runs on Windows, macOS, iOS, Android, and integrates with most major HIS/EMR systems through their plug-in or keyboard layer. Cloud transcription requires internet, so check your clinic's bandwidth before committing.</p>
+</div>
+
+<div class="faq-item">
+  <h3>What does it cost for a solo Indian doctor?</h3>
+  <p>Pricing has shifted over time but the individual plan typically sits in the range of a few thousand rupees per month, with enterprise and hospital plans negotiated. Always check the live pricing page before subscribing; this is one of the few categories where Indian SaaS pricing is competitive with global voice tools.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is it secure enough for patient data under Indian rules?</h3>
+  <p>Augnito complies with HIPAA-style controls and is positioned for Indian DPDP Act compliance. For hospital deployments, the enterprise plan adds SSO, audit logs, and signed BAA-equivalent agreements. Solo doctors using the consumer plan should still avoid dictating directly identifiable PHI into untrusted networks.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>For Indian doctors, Augnito is one of the very few AI tools where "built specifically for Indians" is a real, measurable advantage rather than marketing copy. Word error rate on Indian medical dictation is materially lower than any global alternative. Indian payment is friction-free. Enterprise hospitals already deploy it at scale, which is a strong working signal.</p>
+
+<p>If you are an Indian clinician spending more than 30 minutes a day on documentation, this is a 2-week trial worth doing.</p>
+
+<a href="https://augnito.ai" class="cta-button">Visit Augnito</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/for/doctors/">Best AI tools for Indian doctors and clinicians</a></li>
+  <li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+</ul>
+
+</ArticleLayout>

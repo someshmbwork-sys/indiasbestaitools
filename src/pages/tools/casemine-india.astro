@@ -1,0 +1,156 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Does Casemine cover all Indian courts?`, answer: `It covers the Supreme Court, all High Courts, and most major tribunals (NCLT, NCLAT, ITAT, CESTAT, TDSAT, AFT). District court coverage varies by state and depends on whether those judgments are reliably digitised. For litigation practice, this covers 95%+ of the case law you actually need.` },
+  { question: `How is Casemine different from Manupatra or SCC Online?`, answer: `Manupatra and SCC Online are classical legal databases with full-text search. Casemine adds AI-driven case discovery (CaseIQ), automatic citator graphs, and natural language summarisation. For deep doctrinal research you may still want SCC; for fast practical research, Casemine is faster.` },
+  { question: `Does Casemine accept UPI?`, answer: `Indian subscriptions are priced in INR and accept Indian cards and net banking. UPI direct support varies; most law firms subscribe annually via invoice and bank transfer. Check the current sign-up flow before committing.` },
+  { question: `Will I get a GST invoice my firm can claim?`, answer: `Yes, for Indian subscriptions Casemine issues a tax invoice with GSTIN. This is one of the categories where Indian law firms are particular about input credit; the workflow is well-supported.` },
+  { question: `Is the AI summary trustworthy or does it hallucinate?`, answer: `Because Casemine grounds answers in actual judgment text with one-click verification, hallucination is significantly lower than asking ChatGPT or Claude about Indian case law. You should still read the original judgment before citing it in court, exactly as you would with a junior associate's research.` },
+];
+const reviewedItem = { name: 'Casemine', url: 'https://www.casemine.com', priceInr: '2500', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
+---
+<ArticleLayout
+  title="Casemine Review for Indian Lawyers 2026: AI Legal Research Built on Indian Case Law"
+  metaTitle="Casemine India Review 2026: AI Indian Legal Research, Price, vs Manupatra"
+  description="Casemine is the AI legal research platform built on Indian Supreme Court and High Court judgments. Honest review for litigators, in-house counsel, and law firms. INR pricing, GST, CaseIQ, vs Manupatra and SCC Online."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="6 min read"
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Casemine for Indian lawyers</h3>
+  <p>The only AI legal research tool actually trained on the Indian case-law corpus. CaseIQ surfaces citing and cited judgments faster than manual citator work. Use it as a complement to Manupatra/SCC Online, not a replacement. Pricing is competitive for solo advocates and law firms; GST invoice is standard.</p>
+  <a href="https://www.casemine.com" class="cta-button">Visit Casemine</a>
+</div>
+
+<p>If you have ever asked ChatGPT or Claude about a Supreme Court of India judgment, you already know the problem. Global LLMs confidently make up Indian case names, hallucinate paragraph numbers, and cite Sections that do not say what they claim. For an advocate filing in court, that is a malpractice risk you cannot accept.</p>
+
+<p>Casemine is the AI legal research platform that solves this for Indian practice. This is the practical review for litigators, in-house counsel, law students, and law firm research heads in 2026.</p>
+
+<h2>What Casemine actually does</h2>
+
+<p>Three things, in order of importance:</p>
+
+<ul>
+  <li><strong>Indian case-law search</strong>, Full-text search across Supreme Court, all High Courts, NCLT, NCLAT, ITAT, CESTAT, and major tribunals. Natural-language queries work alongside Boolean.</li>
+  <li><strong>CaseIQ</strong>, Their AI feature that takes your case facts or a draft pleading and surfaces relevant precedent ranked by doctrinal similarity, not just keyword overlap. This is the closest thing to having an associate read all of yesterday's High Court decisions for you.</li>
+  <li><strong>Citator graphs</strong>, For any judgment, see what cited it, what it overruled, what distinguished it. Same information that took a paralegal a day now takes ten seconds.</li>
+</ul>
+
+<h2>How Casemine compares to global LLMs for Indian law</h2>
+
+<p>This is the comparison that matters for Indian lawyers asking "should I just use ChatGPT?":</p>
+
+<ul>
+  <li><strong>Hallucination</strong>, ChatGPT and Claude fabricate Indian case citations regularly. Perplexity is better but still cites secondary sources rather than judgments. Casemine grounds every answer in actual judgment text.</li>
+  <li><strong>Coverage</strong>, Indian court judgments are not indexed cleanly on the open web. Casemine's corpus includes judgments that global LLMs simply have never seen.</li>
+  <li><strong>Citator depth</strong>, No global LLM can tell you reliably which Indian judgments have been overruled or distinguished. Casemine can.</li>
+  <li><strong>Speed for "find me a case on X"</strong>, ChatGPT can suggest doctrinal angles quickly. Casemine finds the actual case. Use both, in that order.</li>
+</ul>
+
+<h2>How Casemine compares to Manupatra and SCC Online</h2>
+
+<p>These remain the gold-standard Indian legal databases. Casemine does not replace them for deep doctrinal work or when your firm has a long-standing SCC subscription as part of its workflow. What Casemine adds:</p>
+
+<ul>
+  <li>AI-driven case discovery via CaseIQ (Manupatra and SCC have weaker AI features)</li>
+  <li>Visual citator graph rather than text-only citator lists</li>
+  <li>Modern web UI that loads faster than legacy databases</li>
+  <li>Often cheaper for solo advocates and small firms</li>
+</ul>
+
+<p>What Manupatra and SCC still do better:</p>
+
+<ul>
+  <li>Authoritative headnotes (SCC's headnotes are themselves citable in some courts)</li>
+  <li>Statutes, rules, and notifications coverage</li>
+  <li>Long institutional history (some courts and arbitrators expect SCC citations)</li>
+</ul>
+
+<p>Realistic pattern in many Indian law firms in 2026: SCC Online or Manupatra for citation authority, Casemine for AI-assisted research and citator graphs.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Litigators preparing for hearings</h3>
+<p>Drop your case facts into CaseIQ, get a ranked list of precedent from your jurisdiction in minutes. Read the top 10 judgments, pick 3 to cite, draft your written submissions. The hour-saved-per-matter compounds across a busy practice.</p>
+
+<h3>In-house counsel at Indian companies</h3>
+<p>Pre-litigation risk research, compliance research, contract precedent. The graph view is genuinely useful when explaining to non-lawyer business stakeholders why a precedent does or does not apply.</p>
+
+<h3>Law students and junior associates</h3>
+<p>Faster than scrolling through hundreds of case results in legacy databases. Citator graphs accelerate learning the doctrine of a particular area of law.</p>
+
+<h3>Tax, corporate, and competition law specialists</h3>
+<p>ITAT, NCLT, NCLAT, and CCI orders are well-covered. For practitioners in these specialised tribunals, the search and citator features are productivity wins.</p>
+
+<h2>Where Casemine is not the right tool</h2>
+
+<ul>
+  <li><strong>You need authoritative headnotes for court citation</strong>, SCC Online remains the standard.</li>
+  <li><strong>You practice only at district court level with local-language case files</strong>, Coverage is weaker for non-reported district matters.</li>
+  <li><strong>You want generative drafting</strong>, Casemine is research, not drafting. Pair with Claude for drafting based on the precedent Casemine surfaces.</li>
+  <li><strong>You want statute and rule lookup primarily</strong>, Manupatra and dedicated bare act apps are faster.</li>
+</ul>
+
+<h2>What Casemine costs and how to pay</h2>
+
+<p>Indian subscriptions are priced in INR. Solo advocate, firm, and enterprise tiers exist. UPI direct support varies; most firms pay annually via invoice and bank transfer with GSTIN-attached tax invoice. Always check the current pricing page; this category is one where Indian SaaS pricing is competitive with the legacy databases.</p>
+
+<h2>Indian alternatives we have looked at</h2>
+
+<ul>
+  <li><strong>SCC Online</strong>, Most authoritative Indian legal database. Older UI, weaker AI, expensive at firm tier.</li>
+  <li><strong>Manupatra</strong>, Strong on statutes and notifications. Decent search.</li>
+  <li><strong>Indian Kanoon</strong>, Free, broad coverage, no AI features, no citator. Useful as a starting point.</li>
+  <li><strong>LegitQuest</strong>, Newer Indian legal AI competitor to Casemine. Worth a parallel trial.</li>
+  <li><strong>Lex Machina, Westlaw, LexisNexis</strong>, Global tools, expensive, not built for Indian case law.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Does Casemine cover all Indian courts?</h3>
+  <p>It covers the Supreme Court, all High Courts, and most major tribunals (NCLT, NCLAT, ITAT, CESTAT, TDSAT, AFT). District court coverage varies by state and depends on whether those judgments are reliably digitised. For litigation practice, this covers 95%+ of the case law you actually need.</p>
+</div>
+
+<div class="faq-item">
+  <h3>How is Casemine different from Manupatra or SCC Online?</h3>
+  <p>Manupatra and SCC Online are classical legal databases with full-text search. Casemine adds AI-driven case discovery (CaseIQ), automatic citator graphs, and natural language summarisation. For deep doctrinal research you may still want SCC; for fast practical research, Casemine is faster.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Casemine accept UPI?</h3>
+  <p>Indian subscriptions are priced in INR and accept Indian cards and net banking. UPI direct support varies; most law firms subscribe annually via invoice and bank transfer. Check the current sign-up flow before committing.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Will I get a GST invoice my firm can claim?</h3>
+  <p>Yes, for Indian subscriptions Casemine issues a tax invoice with GSTIN. This is one of the categories where Indian law firms are particular about input credit; the workflow is well-supported.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is the AI summary trustworthy or does it hallucinate?</h3>
+  <p>Because Casemine grounds answers in actual judgment text with one-click verification, hallucination is significantly lower than asking ChatGPT or Claude about Indian case law. You should still read the original judgment before citing it in court, exactly as you would with a junior associate's research.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>For any Indian advocate doing more than 5 hours of research a week, Casemine pays back its subscription within the first matter. Pair it with SCC Online or Manupatra for citation authority, and pair it with Claude or ChatGPT for drafting on top of the precedent it surfaces. This three-tool stack is the modern Indian litigation research workflow.</p>
+
+<a href="https://www.casemine.com" class="cta-button">Visit Casemine</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+  <li><a href="/tools/claude-india/">Claude in India: full review (for drafting)</a></li>
+  <li><a href="/tools/perplexity-india/">Perplexity in India (for citation-grounded research)</a></li>
+</ul>
+
+</ArticleLayout>

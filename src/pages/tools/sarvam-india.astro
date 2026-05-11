@@ -1,0 +1,155 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Which Indian languages does Sarvam AI actually handle well?`, answer: `Hindi, Tamil, Bengali, Telugu, Marathi, Gujarati, Kannada, Malayalam, Punjabi, and Odia, all at production quality for translation, summarisation, and conversation. Smaller languages like Konkani, Maithili, Santali, and Bodo are improving but not yet at the same level.` },
+  { question: `Is Sarvam AI better than ChatGPT for Hindi?`, answer: `For casual Hindi conversation, both are comparable. For Hindi with code-mixed Hinglish, Sarvam is noticeably more natural. For purely formal Hindi (court orders, government notifications, academic writing), Sarvam outperforms global models because it was trained on Indian government and journalism corpora.` },
+  { question: `Does Sarvam have a free tier?`, answer: `Yes, the consumer chat at chat.sarvam.ai is free with generous limits. API access for developers is priced in INR per million tokens. There is no $20/month forex-card subscription gate, this is one of the few AI tools where Indian payment is genuinely native.` },
+  { question: `Can I use Sarvam for commercial work?`, answer: `Yes. API access includes commercial usage rights. Indian businesses building products on top of Sarvam typically use the API tier; the consumer chat is for individual use.` },
+  { question: `Is Sarvam usable for an Indian business that needs an AI alternative to OpenAI?`, answer: `Yes for many use cases, especially Indian-language customer support, content generation in regional languages, voice in Indian languages, and document understanding of Indian forms. For pure English coding or English content, global models still have the edge.` },
+];
+const reviewedItem = { name: 'Sarvam AI', url: 'https://www.sarvam.ai', priceInr: '0', categoryLabel: 'SaaS' };
+const rating = { value: 4.4, best: 5 };
+---
+<ArticleLayout
+  title="Sarvam AI Review: India's Own Foundation Model for Indian Languages 2026"
+  metaTitle="Sarvam AI India Review 2026: Indian Languages, Free Tier, API Price"
+  description="Sarvam AI is India's foundation model built for Indian languages. Honest review for businesses, developers, and individual users who need Hindi, Tamil, Bengali, and regional Indian language AI."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="7 min read"
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Sarvam for Indian users</h3>
+  <p>The most credible Indian-built foundation model in 2026. Outperforms global models on Hindi, Tamil, Bengali, and code-mixed Hinglish. Free consumer chat at chat.sarvam.ai with no payment friction. API priced in INR for developers and businesses. Use it when your work is in Indian languages or when you want an Indian alternative to OpenAI.</p>
+  <a href="https://www.sarvam.ai" class="cta-button">Try Sarvam (free)</a>
+</div>
+
+<p>Sarvam AI is the closest thing India has to a sovereign AI model in 2026. Built by an Indian team for Indian languages and Indian use cases. Funded by Indian and global investors. Used by Indian government departments, banks, and consumer companies that need AI to actually understand Hindi, Tamil, Bengali, and the long tail of regional Indian languages.</p>
+
+<p>This review is the practical Indian guide. We use Sarvam ourselves for Indian-language work and compare it against ChatGPT, Claude, and Gemini on the tasks where it actually matters.</p>
+
+<h2>Why Sarvam exists and what it's built for</h2>
+
+<p>Global foundation models (GPT, Claude, Gemini) are trained mostly on English internet data. Indian languages account for a small fraction of their training, and the fraction that exists is biased toward formal written text rather than how Indians actually speak and write. This shows up in three real-world failure modes:</p>
+
+<ul>
+  <li><strong>Hinglish</strong>, The code-mixed Hindi-English most Indians use in WhatsApp, marketing copy, and customer support gets translated to either pure Hindi or pure English by global models, losing the natural register.</li>
+  <li><strong>Regional Indian languages beyond top-3</strong>, Odia, Assamese, Konkani, Punjabi, Maithili are handled poorly. Indian companies serving these markets cannot rely on global models for production work.</li>
+  <li><strong>Indian context</strong>, Indian regulatory frameworks, Indian government schemes, Indian legal terminology, Indian historical references are not well-represented in global training data.</li>
+</ul>
+
+<p>Sarvam is trained on a corpus deliberately weighted toward Indian languages and Indian context. The model behaves differently as a result.</p>
+
+<h2>What Sarvam costs Indian users</h2>
+
+<table>
+  <thead>
+    <tr><th>Plan</th><th>Sticker</th><th>You pay (INR)</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Consumer chat (chat.sarvam.ai)</td><td>Free</td><td><strong>₹0</strong></td><td>Generous limits, individual use</td></tr>
+    <tr><td>API access (developers)</td><td>Per million tokens</td><td><strong>Priced in INR</strong></td><td>For building products on top</td></tr>
+    <tr><td>Enterprise</td><td>Custom</td><td><strong>Quote</strong></td><td>SLAs, on-prem options, fine-tuning</td></tr>
+  </tbody>
+</table>
+
+<p><em>Pricing details change. Check the live API pricing page on sarvam.ai before architecting around it. The crucial point: there is no $20/month forex-card subscription. This is one of the few serious AI tools where Indian payment is genuinely native.</em></p>
+
+<h2>Where Sarvam genuinely beats global models</h2>
+
+<h3>Indian-language customer support</h3>
+<p>If you run a D2C brand, an Indian SaaS, or a government-adjacent service that needs to respond to customer queries in Hindi or regional Indian languages, Sarvam handles tone, register, and code-mixing much more naturally than GPT or Claude. The output reads like an Indian customer-support agent, not like a translated American response.</p>
+
+<h3>Indian-language content generation</h3>
+<p>Hindi marketing copy, Tamil social media posts, Bengali blog posts, Marathi product descriptions. Sarvam produces output that does not need heavy editing the way GPT-translated content typically does.</p>
+
+<h3>Hinglish</h3>
+<p>This is the under-appreciated case. Most Indian urban communication is code-mixed. Global models default to picking one language and translating; Sarvam handles the mix natively.</p>
+
+<h3>Voice in Indian languages</h3>
+<p>The Sarvam voice models for Indian languages are among the most natural-sounding TTS and ASR systems available for Hindi, Tamil, and Bengali. For voice bots, IVR replacement, and accessibility products, this is a clear advantage over global voice stacks.</p>
+
+<h3>Indian government and legal context</h3>
+<p>Sarvam has been trained on Indian government documents, Indian legal text, and Indian official communication patterns. When you ask it about a Section of the IPC, an RBI circular, or a Ministry notification, the response is more grounded than what you get from GPT or Claude. Always verify against the actual source, but the failure rate is lower.</p>
+
+<h2>Where Sarvam is not the right tool</h2>
+
+<ul>
+  <li><strong>Pure English creative writing</strong>, Claude and GPT still produce better English prose for global audiences.</li>
+  <li><strong>Software engineering</strong>, Coding tasks are where global frontier models (Claude, GPT-5) genuinely lead.</li>
+  <li><strong>Cutting-edge multimodal tasks</strong>, Video understanding, complex image reasoning, advanced agent workflows are where global models invest most.</li>
+  <li><strong>Large context windows</strong>, Sarvam's context window has improved but is typically smaller than frontier global models.</li>
+</ul>
+
+<h2>Best Indian use cases by audience</h2>
+
+<h3>Indian businesses building consumer products</h3>
+<p>D2C brands, fintech apps, edtech platforms, and consumer companies serving non-English-first Indian markets. The Sarvam API at INR pricing with native Indian language quality is the right default. Pair with a global model for English tasks where needed.</p>
+
+<h3>Indian government and PSU vendors</h3>
+<p>Departments and PSUs that need Indian sovereign AI capability for citizen services, document processing, regional-language outreach. Sarvam's positioning aligns with Indian data residency and digital sovereignty preferences.</p>
+
+<h3>Indian journalists and researchers working in Indian languages</h3>
+<p>Translation, summarisation, fact extraction from Hindi, Tamil, Bengali source material. The free chat is enough for most freelance journalists.</p>
+
+<h3>Indian developers building voice and Indian-language features</h3>
+<p>If you are building any product that needs Indian-language voice input or output, Sarvam's voice stack is the cleanest path. The API is priced for Indian developer economics, not US enterprise budgets.</p>
+
+<h2>Indian alternatives</h2>
+
+<ul>
+  <li><strong>Ola Krutrim</strong>, Indian foundation model from Ola. Smaller adoption, less mature ecosystem.</li>
+  <li><strong>BharatGPT (CoRover)</strong>, Indian conversational AI, more focused on chatbots than general models.</li>
+  <li><strong>Bhashini (govt initiative)</strong>, Open-source Indian-language translation, useful for specific government use cases.</li>
+  <li><strong>OpenAI / Claude / Gemini</strong>, Global frontier models, strong on English, weaker on Indian languages.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Which Indian languages does Sarvam AI actually handle well?</h3>
+  <p>Hindi, Tamil, Bengali, Telugu, Marathi, Gujarati, Kannada, Malayalam, Punjabi, and Odia, all at production quality for translation, summarisation, and conversation. Smaller languages like Konkani, Maithili, Santali, and Bodo are improving but not yet at the same level.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is Sarvam AI better than ChatGPT for Hindi?</h3>
+  <p>For casual Hindi conversation, both are comparable. For Hindi with code-mixed Hinglish, Sarvam is noticeably more natural. For purely formal Hindi (court orders, government notifications, academic writing), Sarvam outperforms global models because it was trained on Indian government and journalism corpora.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Sarvam have a free tier?</h3>
+  <p>Yes, the consumer chat at chat.sarvam.ai is free with generous limits. API access for developers is priced in INR per million tokens. There is no $20/month forex-card subscription gate, this is one of the few AI tools where Indian payment is genuinely native.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Can I use Sarvam for commercial work?</h3>
+  <p>Yes. API access includes commercial usage rights. Indian businesses building products on top of Sarvam typically use the API tier; the consumer chat is for individual use.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is Sarvam usable for an Indian business that needs an AI alternative to OpenAI?</h3>
+  <p>Yes for many use cases, especially Indian-language customer support, content generation in regional languages, voice in Indian languages, and document understanding of Indian forms. For pure English coding or English content, global models still have the edge.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>Sarvam AI is the most credible answer to "is there an Indian AI we can actually use" in 2026. If your work involves Indian languages, Indian customers, or Indian regulatory context, this should be in your stack as a first-class option, not an afterthought.</p>
+
+<p>For English-only work, frontier global models still lead. The realistic pattern most Indian power users are converging on: Sarvam for Indian-language work, Claude or ChatGPT for English creative and coding, Gemini free tier for general utility.</p>
+
+<a href="https://www.sarvam.ai" class="cta-button">Try Sarvam (free)</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+  <li><a href="/tools/claude-india/">Claude in India: full review</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+</ul>
+
+</ArticleLayout>

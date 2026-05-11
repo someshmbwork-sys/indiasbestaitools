@@ -1,0 +1,151 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Is Refrens really free for Indian freelancers?`, answer: `Yes for the basic invoicing, quotation, and client management workflow. Paid tiers add GST/TDS automation, multi-currency billing, white-labelling, and team features. For a solo Indian freelancer doing 10-50 invoices a month, free is genuinely enough.` },
+  { question: `How is Refrens different from Zoho Invoice or QuickBooks?`, answer: `Refrens is built for Indian freelancers and small services businesses first. GSTIN-aware invoicing, TDS deduction handling, payment links that accept UPI plus Indian cards, and freelancer-specific templates. Zoho is broader; QuickBooks is more accounting-software. Refrens is faster to set up if invoicing is your main need.` },
+  { question: `Does Refrens accept UPI for payment from my clients?`, answer: `Yes, this is one of Refrens' strongest features. Generate a payment link, your Indian client pays via UPI in 30 seconds, status updates in your dashboard. International clients can pay via card. The full Indian payment story works without any extra integration.` },
+  { question: `Will I get a proper GST invoice with my GSTIN on the bill?`, answer: `Yes. Refrens generates GST-compliant tax invoices in the correct format including HSN/SAC codes, CGST/SGST/IGST split, reverse charge, and place of supply. This is the kind of compliance detail global invoicing tools miss for Indian users.` },
+  { question: `Is the AI actually useful or is it gimmicky?`, answer: `Useful in three places: auto-generating quotations from a brief, drafting professional follow-up emails for unpaid invoices, and the new client research and proposal AI that pulls public info about a client and suggests pricing. The rest of the AI features are convenience, not transformative.` },
+];
+const reviewedItem = { name: 'Refrens', url: 'https://www.refrens.com', priceInr: '0', categoryLabel: 'SaaS' };
+const rating = { value: 4.6, best: 5 };
+---
+<ArticleLayout
+  title="Refrens Review for Indian Freelancers 2026: AI Invoicing, Quotations, GST, UPI"
+  metaTitle="Refrens India Review 2026: Free AI Invoicing for Indian Freelancers"
+  description="Refrens is the Indian-built invoicing and freelancer business OS with AI. Honest review for solo freelancers, small agencies, and consultants. GST invoicing, UPI payment, TDS, free plan."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="6 min read"
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Refrens for Indian freelancers</h3>
+  <p>The default invoicing OS for Indian freelancers and small services businesses. Free tier is generous; paid tiers add GST/TDS automation and team features. Strong AI for quotations, follow-up emails, and client research. UPI works, GST invoice native, TDS handled. If you have ever struggled with quoting/invoicing/collecting from Indian clients, this is the fix.</p>
+  <a href="https://www.refrens.com" class="cta-button">Try Refrens (free)</a>
+</div>
+
+<p>The hardest part of Indian freelance work is rarely the work itself. It is the surrounding business: quoting properly, invoicing in the correct GST format, collecting payment from clients who delay by weeks, handling the TDS deduction your client made, and looking professional through it all.</p>
+
+<p>Refrens is the Indian-built freelancer business OS that solves the bulk of this with practical workflow plus genuine AI in a few key places. This is the honest review for solo freelancers, small agencies, consultants, and services businesses in 2026.</p>
+
+<h2>What Refrens actually does</h2>
+
+<ul>
+  <li><strong>Quotations and proposals</strong>, Templates plus AI-assisted drafting. Send a professional quote in 5 minutes.</li>
+  <li><strong>GST-compliant invoicing</strong>, Auto-formats with your GSTIN, client GSTIN, HSN/SAC codes, CGST/SGST/IGST split, place of supply, reverse charge. The boring stuff that gets you a 50% short-paid invoice when missing.</li>
+  <li><strong>Payment links</strong>, UPI plus Indian cards plus international cards. The link goes in your invoice email; your client pays in 30 seconds.</li>
+  <li><strong>Recurring invoices</strong>, Set once, sent monthly to retainer clients.</li>
+  <li><strong>Expense and TDS tracking</strong>, Match TDS deducted by clients against Form 26AS at year-end. This single feature saves hours.</li>
+  <li><strong>Client and lead CRM</strong>, Tag clients, follow up on overdue invoices, see who has paid and who hasn't at a glance.</li>
+  <li><strong>AI features</strong>, Quotation drafting from a brief, follow-up email drafting, client research, pricing suggestions.</li>
+</ul>
+
+<h2>Where Refrens beats global alternatives for Indians</h2>
+
+<h3>GST invoicing done right</h3>
+<p>Most global tools (FreshBooks, Wave, Stripe Invoicing) do not understand Indian GST. They miss HSN codes, mis-handle reverse charge, do not split CGST/SGST/IGST based on place of supply, and produce invoices Indian clients reject. Refrens does this natively.</p>
+
+<h3>Payment collection that actually works for Indian clients</h3>
+<p>If your client is Indian, they want to pay via UPI. Generating a payment link that accepts UPI plus cards plus net banking is the single biggest collection accelerator. Refrens does this out of the box.</p>
+
+<h3>TDS reconciliation</h3>
+<p>Indian clients deduct 10% TDS on professional fees under Section 194J. At year-end you reconcile this against Form 26AS to claim the credit. Refrens tracks every TDS deducted across your invoices and produces the reconciliation. This is a freelancer-specific Indian workflow no global tool handles.</p>
+
+<h3>Pricing in INR</h3>
+<p>The Refrens free tier is genuinely free. Paid tiers are priced in INR for Indian freelancer economics, not US enterprise budgets. UPI subscription works.</p>
+
+<h2>Where the AI in Refrens actually helps</h2>
+
+<h3>AI quotation drafting</h3>
+<p>Paste a client brief in 2 lines, get a structured quotation with deliverables, timeline, payment terms, and your branded template. Edit in 30 seconds rather than writing from scratch. For freelancers sending 5+ quotes a week this compounds.</p>
+
+<h3>Follow-up email drafting</h3>
+<p>The most awkward part of freelancing is chasing payment. Refrens drafts a context-aware follow-up email (third reminder, payment 45 days overdue, polite but firm). You edit and send.</p>
+
+<h3>Client research and proposal AI</h3>
+<p>Newer feature. Paste a client company name, get a brief on their business, recent news, likely budget range, and a suggested proposal angle. Useful for preparing pitches to prospects you do not know well.</p>
+
+<h3>Auto-categorisation</h3>
+<p>For expenses and invoices, AI suggests categories based on description, speeding up bookkeeping.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Solo Indian freelancers (writers, designers, developers, consultants)</h3>
+<p>The sweet spot. Free tier handles most of the workflow. Quotations, invoices, UPI collection, follow-ups, TDS reconciliation at year-end. The hour-per-week saved on admin pays back hundredfold in client-billable hours.</p>
+
+<h3>Small Indian agencies (2-10 people)</h3>
+<p>Paid tier with team features for the same workflow at scale. Multi-user, role-based access, client portal, project-level billing.</p>
+
+<h3>Consultants and coaches</h3>
+<p>Recurring invoicing for retainer clients, advance payment workflow, client onboarding documents. Refrens handles this cleanly.</p>
+
+<h3>Indian D2C ops handling B2B invoicing</h3>
+<p>If you sell wholesale to retailers, the GST-correct invoicing and payment-link workflow is the same use case.</p>
+
+<h2>Where Refrens is not the right tool</h2>
+
+<ul>
+  <li><strong>You need full double-entry accounting</strong>, Refrens is invoicing-first, not accounting-first. Use Zoho Books or Tally if you need P&amp;L, balance sheet, audit-ready books.</li>
+  <li><strong>Your business is product-heavy with inventory</strong>, Inventory management is not Refrens' strength.</li>
+  <li><strong>You serve only US/EU clients in USD</strong>, Global-focused tools (Stripe, Wise) may fit better.</li>
+  <li><strong>You need detailed time-tracking integrated with invoicing</strong>, Pair with Toggl or Clockify; Refrens has basic time tracking but specialist tools are deeper.</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+
+<ul>
+  <li><strong>Zoho Invoice / Zoho Books</strong>, More accounting-heavy, broader product line, slightly slower to set up for pure freelancer use.</li>
+  <li><strong>Razorpay Invoice</strong>, Excellent Indian payment story, fewer freelancer-specific workflow features.</li>
+  <li><strong>Vyapar</strong>, Strong for offline-first small business invoicing, less AI.</li>
+  <li><strong>FreshBooks, QuickBooks, Wave</strong>, Global tools, weaker GST/TDS handling for Indian freelancers.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Is Refrens really free for Indian freelancers?</h3>
+  <p>Yes for the basic invoicing, quotation, and client management workflow. Paid tiers add GST/TDS automation, multi-currency billing, white-labelling, and team features. For a solo Indian freelancer doing 10-50 invoices a month, free is genuinely enough.</p>
+</div>
+
+<div class="faq-item">
+  <h3>How is Refrens different from Zoho Invoice or QuickBooks?</h3>
+  <p>Refrens is built for Indian freelancers and small services businesses first. GSTIN-aware invoicing, TDS deduction handling, payment links that accept UPI plus Indian cards, and freelancer-specific templates. Zoho is broader; QuickBooks is more accounting-software. Refrens is faster to set up if invoicing is your main need.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Refrens accept UPI for payment from my clients?</h3>
+  <p>Yes, this is one of Refrens' strongest features. Generate a payment link, your Indian client pays via UPI in 30 seconds, status updates in your dashboard. International clients can pay via card. The full Indian payment story works without any extra integration.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Will I get a proper GST invoice with my GSTIN on the bill?</h3>
+  <p>Yes. Refrens generates GST-compliant tax invoices in the correct format including HSN/SAC codes, CGST/SGST/IGST split, reverse charge, and place of supply. This is the kind of compliance detail global invoicing tools miss for Indian users.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is the AI actually useful or is it gimmicky?</h3>
+  <p>Useful in three places: auto-generating quotations from a brief, drafting professional follow-up emails for unpaid invoices, and the new client research and proposal AI that pulls public info about a client and suggests pricing. The rest of the AI features are convenience, not transformative.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>For Indian freelancers and small services businesses, Refrens is the cleanest invoicing OS available in 2026. The free tier is genuinely usable. The AI features in quotation drafting and follow-up emails save real hours. The UPI + GST + TDS workflow handles the Indian-specific tax and payment friction that global tools miss.</p>
+
+<p>If you are an Indian freelancer still chasing payments via plain Gmail and Word-document invoices, this is the lowest-friction upgrade you can make today.</p>
+
+<a href="https://www.refrens.com" class="cta-button">Try Refrens (free)</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/for/freelancers/">Best AI tools for Indian freelancers</a></li>
+  <li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+</ul>
+
+</ArticleLayout>

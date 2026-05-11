@@ -157,6 +157,13 @@ const pages = [
   { file: 'og/pay-for-ai-tools-india.png',  kicker: 'How to pay',   title: '5 ways to actually pay for AI tools from India',   accent: orange },
   { file: 'og/about.png',             kicker: 'About',        title: "How India's Best AI Tools stays independent",      accent: pink },
   { file: 'og/methodology.png',       kicker: 'Methodology',  title: 'How every review is tested, scored, and updated',  accent: blue },
+  // Round 18: India-only niche tools
+  { file: 'og/india-only.png',        kicker: '🇮🇳 India-only', title: 'Indian-built AI tools the global lists never review', accent: orange },
+  { file: 'og/augnito-india.png',     kicker: 'Tool review',  title: 'Augnito, AI voice dictation for Indian doctors',     accent: mint },
+  { file: 'og/sarvam-india.png',      kicker: 'Tool review',  title: "Sarvam AI, India's own foundation model 2026",        accent: orange },
+  { file: 'og/casemine-india.png',    kicker: 'Tool review',  title: 'Casemine, AI legal research on Indian case law',     accent: blue },
+  { file: 'og/cleartax-india.png',    kicker: 'Tool review',  title: 'Cleartax AI, GST and ITR for Indian filers and CAs', accent: mint },
+  { file: 'og/refrens-india.png',     kicker: 'Tool review',  title: 'Refrens, free AI invoicing for Indian freelancers',  accent: yellow },
 ];
 
 for (const p of pages) {

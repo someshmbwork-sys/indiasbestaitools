@@ -872,6 +872,75 @@ footer > .max-w-6xl { position: relative; z-index: 1; }
   footer::before, footer::after { animation: none; }
 }
 
+/* ---------- INDIA-ONLY FLAGSHIP BANNER ---------- */
+.india-only-banner {
+  display: block;
+  border: 2px solid var(--ink);
+  border-radius: 28px;
+  background: linear-gradient(135deg, var(--ink) 0%, #2C2C5F 100%);
+  color: var(--bg);
+  text-decoration: none !important;
+  box-shadow: 8px 8px 0 var(--orange);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.india-only-banner:hover { transform: translate(-3px, -3px); box-shadow: 11px 11px 0 var(--orange); }
+.india-only-banner .india-only-stripe {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 12px;
+  background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+}
+.india-only-banner .india-only-inner {
+  padding: 2rem 2rem 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .india-only-banner .india-only-inner { grid-template-columns: 1fr; padding-left: 2rem; }
+}
+.india-only-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-weight: 800;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 4px 4px 0 var(--bg);
+  flex-shrink: 0;
+}
+.india-only-arrow { transition: transform 0.2s; }
+.india-only-banner:hover .india-only-arrow { transform: translateX(4px); }
+
+/* ---------- AD SLOT (AdSense, only renders when ADSENSE_CLIENT set) ---------- */
+.ad-slot {
+  display: block;
+  margin: 2.5rem 0;
+  padding: 0;
+  min-height: 1px;
+}
+.ad-slot.ad-placeholder {
+  border: 2px dashed var(--ink);
+  border-radius: 16px;
+  background: repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(27,27,58,0.04) 8px, rgba(27,27,58,0.04) 16px);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.ad-slot.ad-placeholder::before { content: 'Ad slot, configure ADSENSE_CLIENT in BaseLayout to enable'; }
+
 /* ---------- TOOL LOGOS (brand badges) ---------- */
 .tool-logo {
   display: inline-flex;

@@ -1,0 +1,141 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+const faqs = [
+  { question: `Does Cleartax actually use AI or is it just branding?`, answer: `Genuine AI is used in three places: GST reconciliation (matching invoices to GSTR-2A/2B with automatic exception flagging), ITR drafting (auto-fills from Form 16, 26AS, AIS), and the new GenAI chat that answers Indian tax questions grounded in the live tax code. The rest of the platform is rules-based automation built on top of an enormous Indian tax-knowledge base.` },
+  { question: `Can a salaried Indian filer use Cleartax free?`, answer: `Yes. Most salaried filers with Form 16 income can file ITR for free. Capital gains, business income, foreign income, and complex returns push you to paid tiers, which still cost less than a typical CA fee.` },
+  { question: `Is Cleartax usable by CAs for their client work?`, answer: `Yes. The CA tier (Cleartax for Professionals / GST suite) is the workflow most Indian CA firms now use for bulk GST and TDS filing. The AI features save the most time on reconciliation and notice response drafting.` },
+  { question: `Does Cleartax accept UPI?`, answer: `Yes, fully. Indian payment is native, GST invoice automatic, subscription deductible as a business expense.` },
+  { question: `What about data privacy with my income data?`, answer: `Cleartax holds RBI and IRDAI registrations for related fintech products and follows Indian data protection norms. For high-sensitivity work (HNIs, complex structures), most CAs still keep working papers in their own systems and use Cleartax as the filing layer.` },
+];
+const reviewedItem = { name: 'Cleartax', url: 'https://cleartax.in', priceInr: '500', categoryLabel: 'SaaS' };
+const rating = { value: 4.4, best: 5 };
+---
+<ArticleLayout
+  title="Cleartax AI Review for Indian CAs and Filers 2026: GST, ITR, TDS Automation"
+  metaTitle="Cleartax India Review 2026: AI for GST, ITR, TDS, Pricing, CA Plans"
+  description="Cleartax is the Indian-built AI tax platform for individual filers, freelancers, businesses, and CAs. Honest review of the AI features that actually save time. INR pricing, free filing, GST invoice."
+  kicker="Tool Review"
+  publishedAt="2026-05-10"
+  updatedAt="2026-05-10"
+  readTime="6 min read"
+  faqs={faqs}
+  reviewedItem={reviewedItem}
+  rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Cleartax for Indian filers and CAs</h3>
+  <p>The default AI tax platform for India in 2026. Free ITR filing for most salaried users, paid tiers for capital gains and business income, dedicated CA suite for bulk GST and TDS. The AI is most useful in GST 2A/2B reconciliation, ITR auto-fill from AIS and Form 26AS, and the new GenAI tax chat. Indian payment native, GST invoice automatic.</p>
+  <a href="https://cleartax.in" class="cta-button">Visit Cleartax</a>
+</div>
+
+<p>If you have filed an Indian ITR in the last five years, you have probably used Cleartax (formerly ClearTax / Defmacro) at least once. What most users do not realise is that the platform has quietly been adding genuine AI to its workflow, not as marketing copy but as workflow-changing features for GST reconciliation, ITR auto-population, and tax research.</p>
+
+<p>This review covers the parts of Cleartax that actually benefit from AI in 2026, separately for individual filers, freelancers, businesses, and CAs.</p>
+
+<h2>Where Cleartax's AI genuinely saves Indian users time</h2>
+
+<h3>GST 2A/2B reconciliation</h3>
+<p>The bulk of CA-firm GST work is matching purchase invoices to what suppliers have filed in GSTR-1, surfaced as your GSTR-2A/2B. Cleartax's AI auto-matches by GSTIN, invoice number, date, and amount; flags mismatches; suggests resolutions. What used to take a junior accountant a week now takes hours.</p>
+
+<h3>ITR auto-population from AIS, TIS, Form 26AS, Form 16</h3>
+<p>Cleartax pulls your annual information statement, tax information summary, Form 26AS, and Form 16 data, then reconciles them against your draft ITR. AI flags the deltas that need attention. For a salaried filer this turns "what numbers go where" into a one-pass review.</p>
+
+<h3>GenAI tax chat for Indian queries</h3>
+<p>"Can I claim HRA and home loan interest in the same year?" Asked of ChatGPT, you get a confident but partially wrong answer about American tax. Asked of Cleartax's tax chat, you get an answer grounded in the Income Tax Act with specific Sections cited. Indian tax specificity is the whole point.</p>
+
+<h3>TDS reconciliation and notice response</h3>
+<p>For Indian businesses, TDS reconciliation between Form 26Q, 24Q, and your books is a perennial source of notices. Cleartax's tools help match deductee data, flag short deductions, and draft preliminary notice responses.</p>
+
+<h2>What Cleartax actually costs Indian users</h2>
+
+<table>
+  <thead>
+    <tr><th>Use case</th><th>Plan</th><th>Approx INR</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Salaried filer, Form 16 only</td><td>Free ITR</td><td><strong>₹0</strong></td><td>Sufficient for most ~70% of Indian salaried filers</td></tr>
+    <tr><td>Capital gains, F&amp;O, business income</td><td>Paid ITR</td><td><strong>₹500 to ₹5,000 per filing</strong></td><td>Still cheaper than CA fees, with expert review options</td></tr>
+    <tr><td>GST filing (business)</td><td>GST plans</td><td><strong>Annual subscription</strong></td><td>Tiers by GSTIN count and filing volume</td></tr>
+    <tr><td>CA professional suite</td><td>Cleartax for CAs</td><td><strong>Annual enterprise pricing</strong></td><td>Multi-client GST, ITR, TDS, audit workflow</td></tr>
+  </tbody>
+</table>
+
+<p><em>Pricing details change. Always verify on the live pricing page before committing. Crucially, Indian payment is native, UPI works, and GST invoice with input credit is automatic.</em></p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Salaried filers (₹0 use case)</h3>
+<p>If your income is Form 16 + savings interest + maybe one capital gain, Cleartax free is enough. No CA needed unless you have complexity. Auto-population from AIS and 26AS gets you 90% of the way to filed in 15 minutes.</p>
+
+<h3>Indian freelancers and consultants</h3>
+<p>Quarterly advance tax estimation, ITR filing under presumptive (Section 44ADA) or regular books, GST registration and filing if you cross the threshold, and TDS by clients reconciled in one place. Cleartax's freelancer workflow is the cleanest in the market.</p>
+
+<h3>D2C and SME businesses</h3>
+<p>GST 2A/2B reconciliation, e-invoicing, e-way bills, TDS, audit support. Most modern Indian D2C ops have Cleartax as the tax-stack layer above their accounting system (Tally, Zoho Books, Razorpay).</p>
+
+<h3>CA firms (this is the highest-leverage use case)</h3>
+<p>The Cleartax for Professionals suite has become the operating system for many mid-size Indian CA firms doing 100+ GST filings a month. The AI reconciliation and notice-response drafting genuinely change capacity-per-CA economics.</p>
+
+<h2>Where Cleartax is not the right tool</h2>
+
+<ul>
+  <li><strong>Highly complex personal returns</strong>, HNI estate planning, multi-jurisdiction tax, complex trusts. You still want a senior CA, with Cleartax as the filing rails.</li>
+  <li><strong>Specialised audit and assurance work</strong>, Cleartax is filing-focused, not audit-software focused. Caseware, MyAuditor, or Eximius remain audit-side defaults.</li>
+  <li><strong>Cross-border ops</strong>, US ITIN filings, UK Self Assessment, etc. Cleartax is Indian tax law.</li>
+  <li><strong>You want generative drafting for non-tax purposes</strong>, This is a tax platform, not a general-purpose AI.</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+
+<ul>
+  <li><strong>TaxBuddy, Quicko, MyITReturn</strong>, Other Indian ITR-filing platforms, smaller scale, decent for salaried filers.</li>
+  <li><strong>Zoho Books / Tally + manual filing</strong>, Accounting-first stacks, fine for small businesses willing to file manually.</li>
+  <li><strong>Direct portal filing (incometax.gov.in)</strong>, Free, possible, painful for anything beyond the simplest cases.</li>
+  <li><strong>Big 4 firms</strong>, For enterprise; not comparable to Cleartax for SME or individual workflow.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item">
+  <h3>Does Cleartax actually use AI or is it just branding?</h3>
+  <p>Genuine AI is used in three places: GST reconciliation (matching invoices to GSTR-2A/2B with automatic exception flagging), ITR drafting (auto-fills from Form 16, 26AS, AIS), and the new GenAI chat that answers Indian tax questions grounded in the live tax code. The rest of the platform is rules-based automation built on top of an enormous Indian tax-knowledge base.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Can a salaried Indian filer use Cleartax free?</h3>
+  <p>Yes. Most salaried filers with Form 16 income can file ITR for free. Capital gains, business income, foreign income, and complex returns push you to paid tiers, which still cost less than a typical CA fee.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Is Cleartax usable by CAs for their client work?</h3>
+  <p>Yes. The CA tier (Cleartax for Professionals / GST suite) is the workflow most Indian CA firms now use for bulk GST and TDS filing. The AI features save the most time on reconciliation and notice response drafting.</p>
+</div>
+
+<div class="faq-item">
+  <h3>Does Cleartax accept UPI?</h3>
+  <p>Yes, fully. Indian payment is native, GST invoice automatic, subscription deductible as a business expense.</p>
+</div>
+
+<div class="faq-item">
+  <h3>What about data privacy with my income data?</h3>
+  <p>Cleartax holds RBI and IRDAI registrations for related fintech products and follows Indian data protection norms. For high-sensitivity work (HNIs, complex structures), most CAs still keep working papers in their own systems and use Cleartax as the filing layer.</p>
+</div>
+
+<h2>Final verdict</h2>
+
+<p>For Indian individuals, freelancers, SMEs, and CAs, Cleartax is the default AI-augmented tax platform in 2026. Free for most salaried filers. Affordable paid tiers for everyone else. The AI features in GST reconciliation, ITR auto-population, and tax-specific chat are not marketing fluff; they save real hours.</p>
+
+<p>For Indian CAs specifically, the Professionals suite has become difficult to compete with on workflow.</p>
+
+<a href="https://cleartax.in" class="cta-button">Visit Cleartax</a>
+
+<h2>Related guides</h2>
+<ul>
+  <li><a href="/for/cas/">Best AI tools for Indian Chartered Accountants</a></li>
+  <li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+  <li><a href="/pricing-in-inr/">All AI tool pricing in INR with GST</a></li>
+</ul>
+
+</ArticleLayout>

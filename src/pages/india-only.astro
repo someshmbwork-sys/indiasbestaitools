@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Indian-Built AI Tools 2026: The Ones Global Reviews Don't Cover";
+const description = "A curated list of AI tools built by Indian teams or built specifically for Indian work. Voice for Indian doctors, legal AI for Indian courts, GST/ITR/TDS AI, freelance invoicing, Indian-language models. The list global review sites never write.";
+
+const tools = [
+  {
+    slug: 'sarvam',
+    name: 'Sarvam AI',
+    category: 'Indian foundation model',
+    audience: 'Anyone working in Indian languages',
+    pitch: 'India\'s own foundation model. Beats global models on Hindi, Tamil, Bengali, Hinglish. Free consumer chat. INR-priced API.',
+    href: '/tools/sarvam-india/',
+    indianBuilt: true,
+  },
+  {
+    slug: 'augnito',
+    name: 'Augnito',
+    category: 'Voice dictation for doctors',
+    audience: 'Indian doctors, OPDs, hospitals',
+    pitch: 'The only voice AI trained on Indian medical accents and Indian medication names. Apple Dictation, Otter, Dragon all mis-hear Crocin and Pantop. Augnito does not.',
+    href: '/tools/augnito-india/',
+    indianBuilt: true,
+  },
+  {
+    slug: 'casemine',
+    name: 'Casemine',
+    category: 'AI legal research',
+    audience: 'Indian lawyers, in-house counsel',
+    pitch: 'AI legal research grounded in actual Indian Supreme Court and High Court judgments. CaseIQ surfaces precedent the way an associate would. No hallucinated case names.',
+    href: '/tools/casemine-india/',
+    indianBuilt: true,
+  },
+  {
+    slug: 'cleartax',
+    name: 'Cleartax',
+    category: 'Tax AI for Indians',
+    audience: 'Salaried filers, freelancers, businesses, CAs',
+    pitch: 'AI in GST 2A/2B reconciliation, ITR auto-fill from AIS/26AS, Indian-tax-specific GenAI chat. The default Indian tax platform in 2026.',
+    href: '/tools/cleartax-india/',
+    indianBuilt: true,
+  },
+  {
+    slug: 'refrens',
+    name: 'Refrens',
+    category: 'Freelancer business OS',
+    audience: 'Indian freelancers, small agencies, consultants',
+    pitch: 'Free invoicing OS for Indian freelancers. GST-correct invoices, UPI payment collection, TDS reconciliation, AI quotation drafting. Replaces 3 separate tools.',
+    href: '/tools/refrens-india/',
+    indianBuilt: true,
+  },
+];
+
+const upcoming = [
+  { name: 'Eka Care', category: 'Doctor AI scribe + patient record', note: 'Used by clinics across India for AI-assisted patient documentation' },
+  { name: 'Krutrim AI', category: 'Foundation model from Ola', note: 'Indian-built model, smaller adoption but improving fast' },
+  { name: 'LegitQuest', category: 'AI legal research', note: 'Casemine competitor, Indian case law focus, worth a parallel trial' },
+  { name: 'Mailmodo', category: 'Indian AI email marketing', note: 'AMP emails plus AI for Indian D2C and SaaS' },
+  { name: 'Vyapar', category: 'AI bookkeeping for SMEs', note: 'Strong for offline-first small-business invoicing and GST' },
+  { name: 'Vama, Interakt', category: 'WhatsApp Business AI', note: 'WhatsApp commerce AI for Indian D2C and small business' },
+  { name: 'Locad', category: 'AI logistics for Indian D2C', note: 'Forecasting and warehouse routing for Indian e-commerce' },
+  { name: 'Bhashini', category: 'Govt Indian-language translation', note: 'Indian government open-source translation initiative' },
+  { name: 'Embibe', category: 'AI tutoring K-12', note: 'Indian edtech with AI personalisation' },
+  { name: 'CoRover (BharatGPT)', category: 'Conversational AI', note: 'Used in IRCTC bot and PSU deployments' },
+];
+---
+<BaseLayout title={title} description={description} type="website">
+
+  <!-- HERO -->
+  <section class="hero-wave relative overflow-hidden pt-16 pb-16">
+    <div class="hero-wave-bg" aria-hidden="true">
+      <span class="hw-rose"></span>
+      <span class="hw-fuchsia"></span>
+      <span class="hw-lime"></span>
+      <span class="hw-rose-2"></span>
+    </div>
+    <div class="max-w-6xl mx-auto px-6 relative z-20">
+      <span class="pill mb-6"><span class="pill-ticker"></span> India-only research</span>
+      <h1 class="mb-6 max-w-[22ch]">
+        The Indian-built AI tools <span class="handwrite">nobody else</span> reviews.
+      </h1>
+      <p class="text-xl text-ink-soft max-w-[62ch] leading-snug mb-7">
+        Every "best AI tools 2026" list is the same 8 American tools translated to a Hindi audience. This is the page that lists the actual Indian AI tools, the ones built for Indian voice, Indian courts, Indian GST, Indian freelance work, Indian languages, that global review sites never cover.
+      </p>
+      <p class="text-sm text-ink-soft max-w-[60ch]">
+        Each tool below has its own honest review. Every one accepts Indian payment, issues GST invoices, and is run by a team that actually understands Indian work. None of them are sponsored.
+      </p>
+    </div>
+  </section>
+
+  <!-- LIVE TOOL REVIEWS -->
+  <section class="max-w-6xl mx-auto px-6 py-12 reveal">
+    <div class="mb-8 max-w-[720px]">
+      <span class="section-eyebrow mint">Live reviews</span>
+      <h2>The Indian AI tools we have <span class="handwrite">tested in depth</span>.</h2>
+      <p class="text-lg text-ink-soft mt-3">Each one has a full review with INR pricing, payment workflow, GST handling, and the specific Indian use cases where it actually beats global alternatives.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5">
+      {tools.map((t) => (
+        <a href={t.href} class="india-card">
+          <div class="flex items-start justify-between gap-3 mb-3">
+            <div>
+              <div class="text-xs font-extrabold uppercase tracking-wider text-pink mb-1">{t.category}</div>
+              <h3 class="text-2xl font-extrabold tracking-tight leading-tight">{t.name}</h3>
+            </div>
+            {t.indianBuilt && <span class="india-flag" title="Built by an Indian team">🇮🇳</span>}
+          </div>
+          <p class="text-sm text-ink-soft mb-3 leading-relaxed">{t.pitch}</p>
+          <div class="text-xs font-bold text-ink-soft uppercase tracking-wider mb-1">Built for</div>
+          <p class="text-sm text-ink mb-4">{t.audience}</p>
+          <span class="india-card-cta">Read the full review <span aria-hidden="true">&rarr;</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- UPCOMING / WATCHING -->
+  <section class="max-w-6xl mx-auto px-6 py-12 reveal">
+    <div class="mb-8 max-w-[720px]">
+      <span class="section-eyebrow blue">Watching</span>
+      <h2>Indian AI tools we are <span class="handwrite">reviewing next</span>.</h2>
+      <p class="text-lg text-ink-soft mt-3">Reviews land week-by-week. Tell us which one you want first.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+      {upcoming.map((u) => (
+        <div class="india-upcoming">
+          <div class="text-xs font-extrabold uppercase tracking-wider text-pink mb-1">{u.category}</div>
+          <div class="font-extrabold text-lg leading-tight mb-1">{u.name}</div>
+          <div class="text-sm text-ink-soft leading-relaxed">{u.note}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- WHY THIS LIST EXISTS -->
+  <section class="max-w-3xl mx-auto px-6 py-12 reveal">
+    <div class="mb-6">
+      <span class="section-eyebrow lilac">Editorial position</span>
+      <h2>Why this list exists.</h2>
+    </div>
+    <div class="prose-content text-lg leading-relaxed text-ink/90 space-y-4">
+      <p>If you search "best AI tools for India" in 2026, you get articles that copy the same global list: ChatGPT, Claude, Gemini, Notion, Canva, Perplexity. All useful tools, all already covered on this site, all built primarily for American users.</p>
+      <p>The actual Indian AI ecosystem is more interesting. There are voice tools built for Indian doctors that handle medication names global ASR cannot. There are legal AI tools trained on Indian Supreme Court judgments that do not hallucinate Indian case law. There is a foundation model from an Indian team that beats GPT and Claude on Hindi and Hinglish. There is an invoicing OS built around the GST and TDS workflow Indian freelancers actually face.</p>
+      <p>These tools rarely show up on global review sites because the reviewers do not work in India. The Indian-language quality difference is invisible if you do not speak the language. The Indian payment friction difference is invisible if you have a US credit card. The Indian regulatory accuracy difference is invisible if you have never filed a GSTR-3B.</p>
+      <p>This page is the running list. Each entry gets a full review. We update it whenever we test a new one. If a tool we cover stops being recommendable, we remove it and say why.</p>
+      <p>If you build an Indian AI tool we should cover, email us at <strong>hello@indiasbestaitools.com</strong> with the product and one Indian customer we can talk to. We do not accept sponsorship for review placement.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-6 py-12 reveal">
+    <div class="bigcta-card pink">
+      <h2>Get the next India-only review <span class="handwrite">first.</span></h2>
+      <p>One email a week. The newest Indian AI tool we tested, the latest INR price changes, and the one thing Indian users need to know about AI this week.</p>
+      <a href="/#newsletter" class="btn btn-yellow">Subscribe (free) <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+.india-card {
+  display: block;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background: var(--bg);
+  box-shadow: 5px 5px 0 var(--ink);
+  text-decoration: none !important;
+  color: var(--ink);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.india-card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--ink); }
+.india-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+}
+.india-card { padding-left: 2.25rem; }
+.india-flag {
+  font-size: 1.6rem;
+  filter: drop-shadow(2px 2px 0 var(--ink));
+  flex-shrink: 0;
+}
+.india-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+.india-upcoming {
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  background: #fff;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+</style>

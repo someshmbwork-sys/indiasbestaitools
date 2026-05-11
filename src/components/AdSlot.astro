@@ -1,0 +1,46 @@
+---
+// AdSense slot. Renders an actual <ins> ad unit when an AdSense client ID is configured
+// in BaseLayout. Until then, renders an inline placeholder so designers and the user
+// can see where ads will appear without breaking the page.
+//
+// Usage in any layout/page:
+//   import AdSlot from '../components/AdSlot.astro';
+//   <AdSlot slot="in-article" />
+//
+// To enable real ads, set the AdSense client ID in BaseLayout.astro (the global script
+// tag is added there), then come back here and replace ADSENSE_CLIENT below.
+
+const { slot = 'in-article', format = 'auto', responsive = 'true' } = Astro.props;
+
+// Per-publisher AdSense client ID. Leave empty to render placeholder.
+// Format: ca-pub-1234567890123456
+const ADSENSE_CLIENT = '';
+
+// Per-slot ad unit IDs. Once AdSense approves, replace these with the real slot IDs
+// from the AdSense dashboard (Ads → By ad unit). Leave empty to render placeholder.
+const SLOT_IDS = {
+  'in-article': '',
+  'end-of-article': '',
+  'sidebar': '',
+};
+
+const slotId = SLOT_IDS[slot] || '';
+const enabled = ADSENSE_CLIENT && slotId;
+---
+{enabled ? (
+  <div class="ad-slot" data-slot={slot}>
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client={ADSENSE_CLIENT}
+      data-ad-slot={slotId}
+      data-ad-format={format}
+      data-full-width-responsive={responsive}
+    ></ins>
+    <script is:inline>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+) : (
+  <div class="ad-slot ad-placeholder" data-slot={slot} aria-hidden="true"></div>
+)}

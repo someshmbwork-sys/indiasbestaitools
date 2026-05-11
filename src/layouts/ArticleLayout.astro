@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
 
 export interface Props {
   title: string;
@@ -141,6 +142,8 @@ const ldGraph = graph.length ? { '@context': 'https://schema.org', '@graph': gra
     <div class="prose-content">
       <slot />
     </div>
+
+    <AdSlot slot="end-of-article" />
 
     <div class="mt-16 pt-8 border-t-2 border-dashed border-ink/15">
       <span class="kicker">Honest disclosure</span>

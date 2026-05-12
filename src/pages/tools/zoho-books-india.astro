@@ -1,0 +1,108 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+const faqs = [
+  { question: `Is Zoho Books free for Indian businesses?`, answer: `Yes, the free plan supports one user and businesses with revenue below ₹25 lakh. For most Indian solo entrepreneurs and very small businesses, it is genuinely sufficient. Paid tiers start when you cross the revenue threshold or need additional users.` },
+  { question: `Does Zoho Books accept UPI and issue GST invoices?`, answer: `Yes to both. INR billing, UPI payment for your Zoho subscription, GST invoice with your GSTIN. The platform itself generates GST-compliant invoices to your customers with HSN/SAC codes, CGST/SGST/IGST split, place of supply, and reverse charge handling.` },
+  { question: `Is Zia AI actually useful or marketing fluff?`, answer: `Useful in three places: expense auto-categorisation (Zia learns your patterns and pre-categorises ~94% of expenses correctly), anomaly detection (flags duplicate invoices and unusual payments), and natural-language reports ("show me top 5 vendors this quarter"). The rest of the platform is rule-based automation.` },
+  { question: `Does Zoho Books integrate with Indian banks?`, answer: `Yes, with most major Indian banks for auto bank feeds (HDFC, ICICI, Axis, SBI, Kotak, etc.). Auto-reconciliation works for most transaction patterns. Integration with Razorpay, PayU, Stripe for payment collection. Tally import is supported.` },
+  { question: `Should I use Zoho Books or Tally Prime?`, answer: `Use Zoho Books if you want cloud-first, mobile-friendly, multi-user, modern UI, with AI. Use Tally if you have an existing accountant on Tally, need offline-first, or have complex audit/statutory needs that Tally's 30+ years of Indian experience handle better. Many SMEs run both, Zoho for daily ops, Tally for year-end statutory.` },
+];
+const reviewedItem = { name: 'Zoho Books', url: 'https://www.zoho.com/in/books/', priceInr: '999', categoryLabel: 'SaaS' };
+const rating = { value: 4.6, best: 5 };
+---
+<ArticleLayout
+  title="Zoho Books Review for Indian Businesses 2026: AI Accounting + GST"
+  metaTitle="Zoho Books India Review 2026: Zia AI, GST, Indian Bank Feeds"
+  description="Zoho Books is the Indian-built cloud accounting platform with Zia AI for categorisation, GST-native invoicing, Indian bank feeds, and free tier for small businesses. Full review for Indian SMEs and CAs."
+  kicker="Tool Review" publishedAt="2026-05-11" updatedAt="2026-05-11" readTime="6 min read"
+  faqs={faqs} reviewedItem={reviewedItem} rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Zoho Books for Indian businesses</h3>
+  <p>The default cloud accounting platform for Indian SMEs in 2026. Free for businesses under ₹25 lakh revenue with one user. Zia AI handles expense categorisation and anomaly detection. Indian bank feeds, GST-native invoicing, UPI subscription, GST invoice automatic. Pair with Tally if you need legacy audit workflow, otherwise this is the modern Indian default.</p>
+  <a href="https://www.zoho.com/in/books/" class="cta-button">Try Zoho Books (free)</a>
+</div>
+
+<p>Zoho Corp built one of the few software products where "Indian-built" and "world-class" are both true. Zoho Books is the accounting product of that 45-app suite, used by hundreds of thousands of Indian businesses from solo consultants to mid-size companies. This is the practical Indian review for owners and CAs evaluating it in 2026.</p>
+
+<h2>What Zoho Books costs Indian users</h2>
+
+<table>
+  <thead><tr><th>Plan</th><th>Approx INR/month</th><th>Users</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Free</td><td><strong>₹0</strong></td><td>1</td><td>Solo, revenue under ₹25 lakh</td></tr>
+    <tr><td>Standard</td><td><strong>₹999</strong></td><td>3</td><td>Small business with ops</td></tr>
+    <tr><td>Professional</td><td><strong>₹1,999</strong></td><td>5</td><td>Multi-branch SME</td></tr>
+    <tr><td>Premium</td><td><strong>₹3,999</strong></td><td>10</td><td>Larger SME, custom roles</td></tr>
+    <tr><td>Elite</td><td><strong>₹4,999</strong></td><td>10</td><td>+ Advanced inventory</td></tr>
+    <tr><td>Ultimate</td><td><strong>₹7,999</strong></td><td>15</td><td>+ Advanced analytics</td></tr>
+  </tbody>
+</table>
+<p><em>Approximate live INR pricing. Indian payment is native, UPI works for subscription, GST invoice automatic. Verify on the Zoho pricing page before committing.</em></p>
+
+<h2>Where Zia AI actually saves Indian users time</h2>
+
+<h3>Expense auto-categorisation</h3>
+<p>Zia learns your categorisation patterns over time. After a few weeks, ~94% of incoming bank transactions and bills get pre-categorised correctly. Reduces month-end reconciliation from a day to an hour for most small businesses.</p>
+
+<h3>Anomaly detection</h3>
+<p>Flags duplicate invoices, suspicious payments, vendors getting paid twice, and unusual amounts. Catches mistakes a busy founder or junior accountant would miss.</p>
+
+<h3>Natural-language reports</h3>
+<p>"Show me top 5 customers by revenue this quarter" or "Pending invoices over 60 days". Zia answers in plain English with the actual report. Faster than navigating reports menu.</p>
+
+<h3>Email and document AI extraction</h3>
+<p>Forward a vendor bill to your Zoho Books inbox, Zia extracts amount, GSTIN, line items, and creates a draft bill for your approval. Reduces data entry to one click.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Solo Indian entrepreneurs and freelancers</h3>
+<p>Free plan is genuinely enough. Invoice clients, track expenses, file GST through the platform, see profit and loss in real time. No CA needed for the daily workflow.</p>
+
+<h3>D2C and small services businesses (5-50 employees)</h3>
+<p>Standard or Professional plan. Multi-user, role-based access, inventory if you sell physical products, integration with Razorpay or PayU for payment collection, Indian bank auto-feeds for reconciliation.</p>
+
+<h3>CA firms managing client books</h3>
+<p>Zoho Books for client-side ops, with the CA having multi-org access via Zoho Books for CAs program. Many Indian CA firms now use this stack alongside Cleartax for filing.</p>
+
+<h3>Indian Workspace-style businesses (Zoho One bundle)</h3>
+<p>If you already use Zoho CRM, Zoho People, Zoho Mail, the bundled Zoho One subscription (~₹3,000-4,000/user/month) includes Books and is dramatically cheaper than buying each separately.</p>
+
+<h2>Where Zoho Books is not the right tool</h2>
+
+<ul>
+  <li><strong>Heavy audit-side work</strong>, Tally remains the audit firm default; Zoho is operations-side.</li>
+  <li><strong>Complex manufacturing or multi-warehouse</strong>, Look at Tally with add-ons or dedicated ERP.</li>
+  <li><strong>Very large enterprises</strong>, Move to SAP, Oracle NetSuite, or Tally Server Edition with Zoho Books only as a feeder system.</li>
+  <li><strong>You want a single-purchase, install-once model</strong>, Zoho is subscription-only. Tally Prime can be bought outright.</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+<ul>
+  <li><strong>Tally Prime</strong>, India's accounting standard for 30+ years. Stronger for audit-heavy use.</li>
+  <li><strong>Vyapar</strong>, Hindi-first, mobile-first, offline-capable. Best for tier 2/3 city retailers.</li>
+  <li><strong>QuickBooks India</strong>, Discontinued in India in 2022. Migrating users were largely picked up by Zoho.</li>
+  <li><strong>Cleartax</strong>, Filing-first. Pair with Zoho Books for full workflow.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item"><h3>Is Zoho Books free for Indian businesses?</h3><p>Yes, the free plan supports one user and businesses with revenue below ₹25 lakh. For most Indian solo entrepreneurs and very small businesses, it is genuinely sufficient. Paid tiers start when you cross the revenue threshold or need additional users.</p></div>
+<div class="faq-item"><h3>Does Zoho Books accept UPI and issue GST invoices?</h3><p>Yes to both. INR billing, UPI payment for your Zoho subscription, GST invoice with your GSTIN. The platform itself generates GST-compliant invoices to your customers with HSN/SAC codes, CGST/SGST/IGST split, place of supply, and reverse charge handling.</p></div>
+<div class="faq-item"><h3>Is Zia AI actually useful or marketing fluff?</h3><p>Useful in three places: expense auto-categorisation (Zia learns your patterns and pre-categorises ~94% of expenses correctly), anomaly detection (flags duplicate invoices and unusual payments), and natural-language reports ("show me top 5 vendors this quarter"). The rest of the platform is rule-based automation.</p></div>
+<div class="faq-item"><h3>Does Zoho Books integrate with Indian banks?</h3><p>Yes, with most major Indian banks for auto bank feeds (HDFC, ICICI, Axis, SBI, Kotak, etc.). Auto-reconciliation works for most transaction patterns. Integration with Razorpay, PayU, Stripe for payment collection. Tally import is supported.</p></div>
+<div class="faq-item"><h3>Should I use Zoho Books or Tally Prime?</h3><p>Use Zoho Books if you want cloud-first, mobile-friendly, multi-user, modern UI, with AI. Use Tally if you have an existing accountant on Tally, need offline-first, or have complex audit/statutory needs that Tally's 30+ years of Indian experience handle better. Many SMEs run both, Zoho for daily ops, Tally for year-end statutory.</p></div>
+
+<h2>Final verdict</h2>
+<p>For Indian SMEs in 2026, Zoho Books is the cleanest cloud-first accounting platform with genuine AI features and native Indian payment, GST, and bank integration. Free tier is generous enough for solo entrepreneurs. Paid tiers are priced for Indian business economics. The Zoho One bundle is the cheapest way to run an entire SME operations stack on AI-augmented Indian-built software.</p>
+<a href="https://www.zoho.com/in/books/" class="cta-button">Try Zoho Books (free)</a>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+<li><a href="/tools/cleartax-india/">Cleartax (filing-first AI)</a></li>
+<li><a href="/for/cas/">Best AI tools for Indian CAs</a></li>
+</ul>
+
+</ArticleLayout>

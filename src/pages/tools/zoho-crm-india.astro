@@ -1,0 +1,105 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+const faqs = [
+  { question: `Is Zoho CRM free for Indian small businesses?`, answer: `Yes, the free tier supports up to 3 users with the core CRM features. Sufficient for a solo founder or a 3-person sales team to manage leads, contacts, deals, and basic automation. Paid tiers add Zia AI, multi-channel inbox, advanced reports, and more users.` },
+  { question: `What does Zia AI actually do in Zoho CRM?`, answer: `Zia auto-scores leads based on activity and fit, predicts deal closure probability, drafts follow-up emails, surfaces best time to call each contact, and answers natural-language questions about your pipeline. The lead scoring and email drafting are the two features that actually shift close rates.` },
+  { question: `Does Zoho CRM integrate with WhatsApp for Indian sales?`, answer: `Yes. Native WhatsApp Business integration on Standard and above plans, including chat history sync, template messages, and broadcast lists. This is the single biggest reason Indian sales teams pick Zoho over Salesforce or HubSpot.` },
+  { question: `Can it import leads from IndiaMART, JustDial, and Indian portals?`, answer: `Yes via Zoho Forms and integrations. IndiaMART webhooks, JustDial leads, 99acres listings, MagicBricks, Indiamart Buy Leads all flow in. For high-volume B2B lead funnels common in Indian SMEs, this is the right CRM.` },
+  { question: `Should I use Zoho CRM or HubSpot for an Indian startup?`, answer: `Zoho CRM if you need WhatsApp-first sales, IndiaMART lead flow, INR billing, or if you already use the Zoho ecosystem. HubSpot if you sell to global customers and need its marketing automation depth. Indian D2C and SMB founders mostly pick Zoho; Indian SaaS selling to US customers often pick HubSpot.` },
+];
+const reviewedItem = { name: 'Zoho CRM', url: 'https://www.zoho.com/in/crm/', priceInr: '800', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
+---
+<ArticleLayout
+  title="Zoho CRM Review for Indian Businesses 2026: Zia AI, WhatsApp, IndiaMART"
+  metaTitle="Zoho CRM India Review 2026: Free Tier, Zia AI, WhatsApp Sales"
+  description="Zoho CRM is the Indian-built CRM with Zia AI, native WhatsApp, IndiaMART lead import. Honest review for Indian sales teams, D2C founders, and SMEs. Free tier, INR pricing, GST invoice."
+  kicker="Tool Review" publishedAt="2026-05-11" updatedAt="2026-05-11" readTime="6 min read"
+  faqs={faqs} reviewedItem={reviewedItem} rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, Zoho CRM for Indian businesses</h3>
+  <p>The default CRM for Indian sales teams in 2026. Free for 3 users. Zia AI for lead scoring and email drafting. Native WhatsApp Business. IndiaMART and JustDial lead import. INR pricing, UPI subscription, GST invoice. Picks up where HubSpot leaves off for Indian B2B and D2C.</p>
+  <a href="https://www.zoho.com/in/crm/" class="cta-button">Try Zoho CRM (free)</a>
+</div>
+
+<p>Most Indian sales teams in 2026 run on WhatsApp, not email. Most Indian B2B leads come from IndiaMART or JustDial, not LinkedIn ads. The CRM that natively supports both of those is Zoho CRM, which is also why it has quietly become the most-used CRM in Indian SME segments.</p>
+
+<h2>What Zoho CRM costs Indian users</h2>
+
+<table>
+  <thead><tr><th>Plan</th><th>Approx INR/user/mo</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Free</td><td><strong>₹0 (up to 3 users)</strong></td><td>Founder + 2 sales reps</td></tr>
+    <tr><td>Standard</td><td><strong>₹800/user</strong></td><td>Small sales team with WhatsApp + reports</td></tr>
+    <tr><td>Professional</td><td><strong>₹1,400/user</strong></td><td>Mid SME with workflow automation</td></tr>
+    <tr><td>Enterprise</td><td><strong>₹2,400/user</strong></td><td>Full Zia AI + custom modules</td></tr>
+    <tr><td>Ultimate</td><td><strong>₹2,600/user</strong></td><td>Advanced BI dashboards</td></tr>
+  </tbody>
+</table>
+<p><em>Indicative INR. Native INR billing, UPI subscription, GST invoice with input credit. Zoho One bundle (~₹3,000-4,000/user/month) includes CRM with 40+ other apps.</em></p>
+
+<h2>Where Zia AI actually shifts close rates</h2>
+
+<h3>Lead scoring</h3>
+<p>Zia learns from your won and lost deals over time. After a few months, the score on each new lead correlates strongly with actual closure probability. Sales reps prioritise high-score leads first, increasing pipeline velocity.</p>
+
+<h3>Email and WhatsApp drafting</h3>
+<p>Zia drafts contextual follow-ups based on the deal stage, last touch, and prospect data. The Indian sales rep edits in 30 seconds and sends. Reduces follow-up procrastination, which is the single biggest pipeline killer.</p>
+
+<h3>Best time to call</h3>
+<p>Predicts when each prospect is most likely to pick up based on past call history. For Indian B2B where 70% of conversion still happens on a call, this materially helps.</p>
+
+<h3>Pipeline anomaly detection</h3>
+<p>Flags stuck deals, missing activities, and reps falling behind quota. Manager dashboard in plain English.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Indian B2B sales teams</h3>
+<p>SaaS, IT services, manufacturing, distribution. The IndiaMART and JustDial integration alone justifies the tool for any business that runs on these lead sources.</p>
+
+<h3>D2C founders running WhatsApp-first sales</h3>
+<p>Native WhatsApp Business, broadcast lists, template messages, chat history attached to each contact. The Indian D2C playbook is "lead → WhatsApp → close", and Zoho CRM supports this end-to-end.</p>
+
+<h3>Real estate, education, healthcare</h3>
+<p>Industries where leads come from MagicBricks, 99acres, Shiksha, Practo, or other Indian portals. Webhooks pull leads in real time. Round-robin assignment to reps.</p>
+
+<h3>Indian agencies and consultancies</h3>
+<p>Deal pipelines, client onboarding workflow, retainer management. Pair with Zoho Books for invoicing.</p>
+
+<h2>Where Zoho CRM is not the right tool</h2>
+
+<ul>
+  <li><strong>Pure global SaaS selling to US enterprise</strong>, HubSpot or Salesforce remain default.</li>
+  <li><strong>Heavy marketing automation</strong>, HubSpot is deeper, Zoho integrates with Zoho MarketingHub for parity.</li>
+  <li><strong>Very large enterprise sales orgs</strong>, Salesforce remains the global enterprise standard.</li>
+  <li><strong>Pure self-serve product-led growth</strong>, A CRM may not be the right tool at all; analytics + email automation may serve better.</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+<ul>
+<li><strong>Freshsales (Freshworks)</strong>, Chennai-built, NASDAQ-listed, Freddy AI for lead scoring. Strong alternative.</li>
+<li><strong>LeadSquared</strong>, Bangalore-built, high-volume lead workflow, popular in education and real estate.</li>
+<li><strong>HubSpot, Salesforce, Pipedrive</strong>, Global tools, weaker WhatsApp and Indian portal integration.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item"><h3>Is Zoho CRM free for Indian small businesses?</h3><p>Yes, the free tier supports up to 3 users with the core CRM features. Sufficient for a solo founder or a 3-person sales team to manage leads, contacts, deals, and basic automation. Paid tiers add Zia AI, multi-channel inbox, advanced reports, and more users.</p></div>
+<div class="faq-item"><h3>What does Zia AI actually do in Zoho CRM?</h3><p>Zia auto-scores leads based on activity and fit, predicts deal closure probability, drafts follow-up emails, surfaces best time to call each contact, and answers natural-language questions about your pipeline. The lead scoring and email drafting are the two features that actually shift close rates.</p></div>
+<div class="faq-item"><h3>Does Zoho CRM integrate with WhatsApp for Indian sales?</h3><p>Yes. Native WhatsApp Business integration on Standard and above plans, including chat history sync, template messages, and broadcast lists. This is the single biggest reason Indian sales teams pick Zoho over Salesforce or HubSpot.</p></div>
+<div class="faq-item"><h3>Can it import leads from IndiaMART, JustDial, and Indian portals?</h3><p>Yes via Zoho Forms and integrations. IndiaMART webhooks, JustDial leads, 99acres listings, MagicBricks, Indiamart Buy Leads all flow in. For high-volume B2B lead funnels common in Indian SMEs, this is the right CRM.</p></div>
+<div class="faq-item"><h3>Should I use Zoho CRM or HubSpot for an Indian startup?</h3><p>Zoho CRM if you need WhatsApp-first sales, IndiaMART lead flow, INR billing, or if you already use the Zoho ecosystem. HubSpot if you sell to global customers and need its marketing automation depth. Indian D2C and SMB founders mostly pick Zoho; Indian SaaS selling to US customers often pick HubSpot.</p></div>
+
+<h2>Final verdict</h2>
+<p>For Indian sales teams selling primarily to Indian customers, Zoho CRM is the cleanest default in 2026. Free tier is genuinely useful. Zia AI lead scoring and email drafting earn back the subscription within the first month. Native WhatsApp and IndiaMART integration are the unique-to-India features no global CRM matches.</p>
+<a href="https://www.zoho.com/in/crm/" class="cta-button">Try Zoho CRM (free)</a>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+<li><a href="/tools/zoho-books-india/">Zoho Books for Indian accounting</a></li>
+</ul>
+
+</ArticleLayout>

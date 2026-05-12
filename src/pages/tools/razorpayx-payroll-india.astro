@@ -1,0 +1,101 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+const faqs = [
+  { question: `How does RazorpayX Payroll differ from Keka or greytHR?`, answer: `RazorpayX is payroll-first with banking integration; Keka and greytHR are full HRMS with payroll as one module. If your only HR pain is paying salaries correctly with TDS and PF deducted and reconciled, RazorpayX is faster and cheaper. If you need leave, performance, OKRs, attendance, hiring workflow, pick a full HRMS.` },
+  { question: `What does RazorpayX Payroll cost?`, answer: `Approximately ₹100 per employee per month for the standard plan, with the first few employees often free. Indian payment native, GST invoice automatic, integrated with Razorpay's payments stack for salary disbursement.` },
+  { question: `Does it handle PF, ESI, PT, TDS compliance?`, answer: `Yes, automatically. PF and ESI deducted, deposited via challan, ECR filed. Professional tax computed by state. TDS deducted under Section 192, Form 16 generated at year-end. The compliance pieces are handled end-to-end.` },
+  { question: `Can salaries be disbursed in one click?`, answer: `Yes, this is the core RazorpayX feature. Approved payroll triggers salary disbursement to all employees in one approval, including the statutory deposits (PF challan, ESI challan, TDS challan). The whole monthly cycle compresses from days to minutes.` },
+  { question: `Is RazorpayX Payroll suitable for a 50-person company?`, answer: `Yes, ideal range. Once you cross ~100 employees and need OKRs, performance management, hiring, and engagement, you graduate to Keka or greytHR. For pure-payroll teams under 100, RazorpayX is the cleanest.` },
+];
+const reviewedItem = { name: 'RazorpayX Payroll', url: 'https://razorpay.com/payroll/', priceInr: '100', categoryLabel: 'SaaS' };
+const rating = { value: 4.5, best: 5 };
+---
+<ArticleLayout
+  title="RazorpayX Payroll Review 2026: One-Click Salary + PF + TDS for India"
+  metaTitle="RazorpayX Payroll India Review 2026: Pricing, Compliance, One-Click"
+  description="RazorpayX Payroll is the Bangalore-built one-click payroll with PF, ESI, PT, TDS auto-deducted and salaries disbursed via Razorpay banking. Honest review for Indian startups under 100 employees."
+  kicker="Tool Review" publishedAt="2026-05-11" updatedAt="2026-05-11" readTime="5 min read"
+  faqs={faqs} reviewedItem={reviewedItem} rating={rating}
+>
+
+<div class="tldr-box">
+  <h3>TL;DR, RazorpayX Payroll for Indian startups</h3>
+  <p>The one-click payroll product from India's largest payment gateway. ~₹100/employee/month, salaries disbursed plus PF, ESI, PT, TDS handled in a single approval. Best for startups under 100 employees that want payroll done correctly without full HRMS overhead. Graduates well into Keka or greytHR as the team scales.</p>
+  <a href="https://razorpay.com/payroll/" class="cta-button">Visit RazorpayX Payroll</a>
+</div>
+
+<p>For an Indian startup founder, payroll is the operational chore that combines highest stakes (people get angry if salary is wrong or late) with highest compliance risk (PF and TDS misses trigger notices). RazorpayX Payroll exists to compress this entire monthly cycle into a single approval click.</p>
+
+<h2>What RazorpayX Payroll actually does</h2>
+
+<ul>
+  <li><strong>Salary computation</strong>, CTC structuring, allowances, deductions, reimbursements, loans and advances.</li>
+  <li><strong>Statutory deductions</strong>, PF (employee + employer), ESI (where applicable), Professional Tax (by state), TDS under Section 192, LWF.</li>
+  <li><strong>Salary disbursement</strong>, Approved payroll triggers payments via Razorpay banking integration. Indian banks supported.</li>
+  <li><strong>Statutory deposits</strong>, PF challan, ESI challan, TDS challan deposited via the platform.</li>
+  <li><strong>Compliance filings</strong>, Monthly PF ECR, monthly ESI ECR, quarterly TDS return, annual Form 16, gratuity calc.</li>
+  <li><strong>Employee self-service</strong>, Payslip download, IT declarations, leave application, reimbursement claims.</li>
+</ul>
+
+<h2>Where RazorpayX wins</h2>
+
+<h3>One-click monthly close</h3>
+<p>Approve payroll, salaries and statutory amounts disburse together. The "salary day" overhead for a small Indian startup goes from a day of back-and-forth to minutes.</p>
+
+<h3>INR-native banking integration</h3>
+<p>Razorpay's existing banking rails (RazorpayX) move money. No separate bank file uploads, no missed UPI, no manual NEFT entries.</p>
+
+<h3>Compliance correctness</h3>
+<p>PF, ESI, PT, TDS handled automatically. The kind of corrections that take a CA two days to clean up after a sloppy month are simply not allowed to happen.</p>
+
+<h3>Indian payment native, GST invoice automatic</h3>
+<p>Subscription billed in INR with UPI / Indian cards, GST invoice with input credit, tax deductible.</p>
+
+<h2>Best Indian use cases</h2>
+
+<h3>Early-stage Indian startups (5-50 employees)</h3>
+<p>The clearest fit. Founder + 1 ops person can run payroll end-to-end with minimal CA dependency. Statutory compliance handled correctly from month 1.</p>
+
+<h3>Indian consulting firms and agencies</h3>
+<p>10-30 employees, mostly consultant cost structure, reimbursement-heavy expense patterns. RazorpayX handles this clean.</p>
+
+<h3>Companies in transition to formalised HR</h3>
+<p>Before hiring a dedicated HRBP, RazorpayX is the bridge that lets founders run payroll properly. Migrating to Keka or greytHR is straightforward when you outgrow.</p>
+
+<h2>Where RazorpayX is not the right tool</h2>
+
+<ul>
+  <li><strong>You need OKR, performance management, hiring workflow</strong>, Use Keka. RazorpayX is payroll-only.</li>
+  <li><strong>Heavy attendance/biometric workflows</strong>, greytHR has deeper attendance modules.</li>
+  <li><strong>200+ employees with multi-state, multi-entity ops</strong>, Mid-market HRMS is more flexible.</li>
+  <li><strong>Global payroll (US, EU employees)</strong>, Use Rippling or Deel.</li>
+</ul>
+
+<h2>Indian alternatives</h2>
+<ul>
+<li><strong>Keka</strong>, Full HRMS, modern UX. <a href="/tools/keka-india/">Read review</a></li>
+<li><strong>greytHR</strong>, Deepest compliance pedigree. <a href="/tools/greythr-india/">Read review</a></li>
+<li><strong>Zoho Payroll</strong>, Bundled with Zoho ecosystem.</li>
+<li><strong>QuickBooks Payroll, Paybooks</strong>, Older Indian payroll tools.</li>
+</ul>
+
+<h2>Indian-specific FAQs</h2>
+
+<div class="faq-item"><h3>How does RazorpayX Payroll differ from Keka or greytHR?</h3><p>RazorpayX is payroll-first with banking integration; Keka and greytHR are full HRMS with payroll as one module. If your only HR pain is paying salaries correctly with TDS and PF deducted and reconciled, RazorpayX is faster and cheaper. If you need leave, performance, OKRs, attendance, hiring workflow, pick a full HRMS.</p></div>
+<div class="faq-item"><h3>What does RazorpayX Payroll cost?</h3><p>Approximately ₹100 per employee per month for the standard plan, with the first few employees often free. Indian payment native, GST invoice automatic, integrated with Razorpay's payments stack for salary disbursement.</p></div>
+<div class="faq-item"><h3>Does it handle PF, ESI, PT, TDS compliance?</h3><p>Yes, automatically. PF and ESI deducted, deposited via challan, ECR filed. Professional tax computed by state. TDS deducted under Section 192, Form 16 generated at year-end. The compliance pieces are handled end-to-end.</p></div>
+<div class="faq-item"><h3>Can salaries be disbursed in one click?</h3><p>Yes, this is the core RazorpayX feature. Approved payroll triggers salary disbursement to all employees in one approval, including the statutory deposits (PF challan, ESI challan, TDS challan). The whole monthly cycle compresses from days to minutes.</p></div>
+<div class="faq-item"><h3>Is RazorpayX Payroll suitable for a 50-person company?</h3><p>Yes, ideal range. Once you cross ~100 employees and need OKRs, performance management, hiring, and engagement, you graduate to Keka or greytHR. For pure-payroll teams under 100, RazorpayX is the cleanest.</p></div>
+
+<h2>Final verdict</h2>
+<p>For Indian startups under 100 employees that want payroll done correctly without buying a full HRMS, RazorpayX Payroll is the cleanest tool in 2026. One-click monthly close. Indian banking integration. Compliance handled end-to-end. The graduation path to Keka or greytHR is well-trodden when the team scales.</p>
+<a href="https://razorpay.com/payroll/" class="cta-button">Visit RazorpayX Payroll</a>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="/india-only/">All Indian-built AI tools we cover</a></li>
+<li><a href="/tools/keka-india/">Keka (when you outgrow this)</a></li>
+<li><a href="/tools/greythr-india/">greytHR (compliance-first alternative)</a></li>
+</ul>
+
+</ArticleLayout>

@@ -164,6 +164,17 @@ const pages = [
   { file: 'og/casemine-india.png',    kicker: 'Tool review',  title: 'Casemine, AI legal research on Indian case law',     accent: blue },
   { file: 'og/cleartax-india.png',    kicker: 'Tool review',  title: 'Cleartax AI, GST and ITR for Indian filers and CAs', accent: mint },
   { file: 'og/refrens-india.png',     kicker: 'Tool review',  title: 'Refrens, free AI invoicing for Indian freelancers',  accent: yellow },
+  // Round 19: 10 more Indian-built tools
+  { file: 'og/zoho-books-india.png',         kicker: 'Tool review', title: 'Zoho Books, AI accounting for Indian businesses',      accent: blue },
+  { file: 'og/zoho-crm-india.png',           kicker: 'Tool review', title: 'Zoho CRM, WhatsApp + Zia AI for Indian sales',          accent: pink },
+  { file: 'og/tally-prime-india.png',        kicker: 'Tool review', title: "Tally Prime, India's accounting standard with AI",      accent: orange },
+  { file: 'og/vyapar-india.png',             kicker: 'Tool review', title: 'Vyapar, Hindi-first invoicing for Indian shops',       accent: yellow },
+  { file: 'og/predis-india.png',             kicker: 'Tool review', title: 'Predis.ai, AI social posts in 18 Indian languages',    accent: mint },
+  { file: 'og/invideo-india.png',            kicker: 'Tool review', title: 'InVideo AI, Hindi voiceover video for Indian creators', accent: pink },
+  { file: 'og/keka-india.png',               kicker: 'Tool review', title: 'Keka, AI HRMS built in Hyderabad for India',            accent: blue },
+  { file: 'og/greythr-india.png',            kicker: 'Tool review', title: "greytHR, India's HR + payroll standard with AI",       accent: mint },
+  { file: 'og/razorpayx-payroll-india.png',  kicker: 'Tool review', title: 'RazorpayX Payroll, one-click salary for Indian startups', accent: blue },
+  { file: 'og/mailmodo-india.png',           kicker: 'Tool review', title: 'Mailmodo, AMP email + AI for Indian D2C and SaaS',     accent: orange },
 ];
 
 for (const p of pages) {
